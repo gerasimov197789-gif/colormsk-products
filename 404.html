@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <script>
-// Сохраняем текущий путь перед редиректом
 const path = window.location.pathname;
 const page = path.split('/').filter(p => p.length > 0)[0];
 if (page && page !== 'colormsk-products') {
-    // Перенаправляем на главную с параметром page
     window.location.href = '/colormsk-products/?page=' + page;
 } else {
     window.location.href = '/colormsk-products/';
