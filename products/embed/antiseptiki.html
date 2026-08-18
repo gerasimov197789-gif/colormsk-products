@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+    <style>
+        /* Стили для iframe — они точно не сломаются! */
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: transparent; margin: 20px; padding: 0; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; }
+        .product-card { background: #fff; border-radius: 12px; padding: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); text-align: left; transition: transform .2s; border: 1px solid #eee; }
+        .product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+        .product-brand { font-size: 13px; color: #888; font-weight: 600; }
+        .product-name { font-size: 15px; font-weight: 700; margin: 5px 0; color: #1a2a3a; line-height: 1.3; }
+        .product-price { font-size: 18px; font-weight: 700; color: #1a2a3a; margin: 8px 0 5px; }
+        .product-volume { font-size: 12px; color: #999; }
+        .product-stock { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 11px; font-weight: 500; margin-top: 8px; }
+        .in-stock { color: #3d7a4a; background: rgba(61,122,74,0.12); }
+        .on-order { color: #d4880f; background: rgba(212,136,15,0.12); }
+        .loading { text-align: center; padding: 40px; color: #666; }
+        .error { text-align: center; padding: 40px; color: #e74c3c; }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="loading">⏳ Загрузка товаров...</div>
+    </div>
+
+    <script>
+        (function() {
+            const container = document.getElementById('app');
+            const category = 'antiseptiki'; // Укажите нужную категорию
+            const PRODUCTS_URL = 'https://raw.githubusercontent.com/gerasimov197789-gif/colormsk-products/main/products/';
+
+            async function loadProducts() {
+                try {
+                    const response = await fetch(PRODUCTS_URL + category + '.json');
+                    if (!response.ok) throw new Error('Ошибка загрузки данных');
+                    const items = await response.json();
+
+                    if (!items || items.length === 0) {
+                        container.innerHTML = '<div class="error">Товары не найдены</div>';
+                        return;
+                    }
+
+                    let html = '<div class="products-grid">';
+                    items.forEach(product => {
+                        const firstSize = product.sizes[0];
+                        const firstOption = firstSize.options[0];
+                        const stockClass = firstOption.stock === 'Под заказ' ? 'on-order' : 'in-stock';
+                        const stockText = firstOption.stock === 'Под заказ' ? '⏳ Под заказ' : '✅ В наличии';
+
+                        html += `
+                            <div class="product-card">
+                                <div class="product-brand">${product.brand}</div>
+                                <div class="product-name">${product.name}</div>
+                                <div class="product-price">${firstOption.price.toLocaleString()} ₽</div>
+                                <div class="product-volume">${firstSize.volume}</div>
+                                <div class="product-stock ${stockClass}">${stockText}</div>
+                            </div>
+                        `;
+                    });
+                    html += '</div>';
+                    container.innerHTML = html;
+
+                } catch (error) {
+                    container.innerHTML = `<div class="error">❌ ${error.message}</div>`;
+                }
+            }
+
+            loadProducts();
+        })();
+    </script>
+</body>
+</html>
