@@ -26,19 +26,12 @@
     opacity: 0 !important;
 }
 
-/* ===== СКРЫВАЕМ ВСЕ H1 В РАЗДЕЛАХ, КРОМЕ АКТИВНОГО ===== */
-.t-page:not(.active) h1 {
-    display: none !important;
-}
-.t-page.active h1 {
-    display: block !important;
-}
-
-/* ===== УЛУЧШАЕМ ЧИТАЕМОСТЬ ЗАГОЛОВКОВ ===== */
-.t-page h1,
-.t-page .category-h1,
-.t-page.active h1 {
+/* ===== СТИЛИ ДЛЯ ЗАГОЛОВКОВ РАЗДЕЛОВ ===== */
+.category-h1 {
+    font-size: 28px !important;
+    font-weight: 700 !important;
     color: #e8e8e8 !important;
+    margin: 0 0 20px 0 !important;
     text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.85) !important;
     background: rgba(26, 42, 58, 0.35) !important;
     padding: 14px 28px !important;
@@ -47,8 +40,14 @@
     backdrop-filter: blur(8px) !important;
     -webkit-backdrop-filter: blur(8px) !important;
     border: 1px solid rgba(255, 255, 255, 0.08) !important;
-    font-weight: 700 !important;
-    font-size: 28px !important;
+}
+
+/* ===== СКРЫВАЕМ ВСЕ H1 В РАЗДЕЛАХ, КРОМЕ АКТИВНОГО ===== */
+.t-page:not(.active) .category-h1 {
+    display: none !important;
+}
+.t-page.active .category-h1 {
+    display: inline-block !important;
 }
 
 /* ===== КАРТОЧКИ ТОВАРОВ ===== */
@@ -268,37 +267,54 @@
 </div>
 
 <!-- ============================================================
-     РАЗДЕЛЫ КАТАЛОГА
+     РАЗДЕЛЫ КАТАЛОГА С ЗАГОЛОВКАМИ H1
      ============================================================ -->
+
+<!-- АНТИСЕПТИКИ -->
 <div class="t-page" id="page-antiseptiki">
+    <h1 class="category-h1">Антисептики для дерева — защита от гниения</h1>
     <div class="t-products-grid" id="antiseptiki-grid"></div>
 </div>
 
+<!-- ИНТЕРЬЕРНЫЕ КРАСКИ -->
 <div class="t-page" id="page-interier">
+    <h1 class="category-h1">Интерьерные краски для стен и потолков</h1>
     <div class="t-products-grid" id="interier-grid"></div>
 </div>
 
+<!-- ФАСАДНЫЕ КРАСКИ -->
 <div class="t-page" id="page-fasad">
+    <h1 class="category-h1">Фасадные краски для наружных работ</h1>
     <div class="t-products-grid" id="fasad-grid"></div>
 </div>
 
+<!-- ЛАКИ -->
 <div class="t-page" id="page-laki">
+    <h1 class="category-h1">Лаки для дерева, мебели и паркета</h1>
     <div class="t-products-grid" id="laki-grid"></div>
 </div>
 
+<!-- ГРУНТОВКИ -->
 <div class="t-page" id="page-gruntovki">
+    <h1 class="category-h1">Грунтовки и шпатлевки для поверхностей</h1>
     <div class="t-products-grid" id="gruntovki-grid"></div>
 </div>
 
+<!-- ДЕКОРАТИВНЫЕ ШТУКАТУРКИ -->
 <div class="t-page" id="page-decor">
+    <h1 class="category-h1">Декоративные штукатурки</h1>
     <div class="t-products-grid" id="decor-grid"></div>
 </div>
 
+<!-- ЭМАЛИ -->
 <div class="t-page" id="page-alkid">
+    <h1 class="category-h1">Алкидные краски и эмали</h1>
     <div class="t-products-grid" id="alkid-grid"></div>
 </div>
 
+<!-- РАСТВОРИТЕЛИ -->
 <div class="t-page" id="page-rastvoriteli">
+    <h1 class="category-h1">Растворители для красок и лаков</h1>
     <div class="t-products-grid" id="rastvoriteli-grid"></div>
 </div>
 
@@ -565,10 +581,6 @@ document.addEventListener('click', function(e) {
 // ===== ЗАГРУЗКА ТОВАРОВ С КЕШЕМ =====
 const productCache = {};
 
-function delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 function getFirstOption(product) {
     if (!product.sizes || product.sizes.length === 0) return null;
     const firstSize = product.sizes[0];
@@ -650,32 +662,6 @@ function renderProductCards(items, categoryKey) {
         </div>`;
     });
     return html;
-}
-
-function addCategoryH1(categoryKey, container) {
-    const page = document.getElementById('page-' + categoryKey);
-    if (!page) return;
-    
-    const oldH1 = page.querySelector('.category-h1');
-    if (oldH1) oldH1.remove();
-    
-    const h1 = document.createElement('h1');
-    h1.className = 'category-h1';
-    h1.style.cssText = 'font-size:28px;font-weight:700;color:#e8e8e8;margin:0 0 20px 0;text-shadow:2px 2px 12px rgba(0,0,0,0.85);background:rgba(26,42,58,0.35);padding:14px 28px;border-radius:14px;display:inline-block;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.08);';
-    
-    const titles = {
-        antiseptiki: 'Антисептики для дерева — защита от гниения',
-        interier: 'Интерьерные краски для стен и потолков',
-        fasad: 'Фасадные краски для наружных работ',
-        laki: 'Лаки для дерева, мебели и паркета',
-        gruntovki: 'Грунтовки и шпатлевки для поверхностей',
-        decor: 'Декоративные штукатурки',
-        alkid: 'Алкидные краски и эмали',
-        rastvoriteli: 'Растворители для красок и лаков'
-    };
-    
-    h1.textContent = titles[categoryKey] || categoryKey;
-    page.insertBefore(h1, container);
 }
 
 function attachEventHandlers(categoryKey) {
@@ -771,7 +757,6 @@ async function renderProducts(categoryKey, containerId) {
     if (productCache[categoryKey]) {
         console.log('✅ Товары из кеша:', categoryKey);
         container.innerHTML = renderProductCards(productCache[categoryKey], categoryKey);
-        addCategoryH1(categoryKey, container);
         attachEventHandlers(categoryKey);
         return;
     }
@@ -807,7 +792,6 @@ async function renderProducts(categoryKey, containerId) {
         console.log('✅ Загружено товаров:', items.length);
         
         container.innerHTML = renderProductCards(items, categoryKey);
-        addCategoryH1(categoryKey, container);
         attachEventHandlers(categoryKey);
 
     } catch (error) {
@@ -1182,7 +1166,6 @@ document.querySelectorAll('.t-nav-link').forEach(link => {
             if (productCache[page]) {
                 console.log('✅ Товары из кеша:', page);
                 container.innerHTML = renderProductCards(productCache[page], page);
-                addCategoryH1(page, container);
                 attachEventHandlers(page);
                 return;
             }
@@ -1265,11 +1248,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const containerId = currentPage + '-grid';
             const container = document.getElementById(containerId);
             if (container) {
-                // Проверяем кеш
                 if (productCache[currentPage]) {
                     console.log('✅ Товары из кеша:', currentPage);
                     container.innerHTML = renderProductCards(productCache[currentPage], currentPage);
-                    addCategoryH1(currentPage, container);
                     attachEventHandlers(currentPage);
                 } else {
                     console.log('🔄 Загрузка товаров для:', currentPage);
