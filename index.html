@@ -1204,26 +1204,29 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Определяем текущую страницу по URL
     const currentPath = window.location.pathname;
-    let currentPage = 'home';
+    const urlParams = new URLSearchParams(window.location.search);
+    const pageParam = urlParams.get('page');
+    let currentPage = pageParam || 'home';
     
-    // Соответствие путей и страниц
-    const pageMap = {
-        '/': 'home',
-        '/antiseptiki': 'antiseptiki',
-        '/kraski-interiernye': 'interier',
-        '/kraski-fasadnye': 'fasad',
-        '/laki': 'laki',
-        '/gruntovki': 'gruntovki',
-        '/dekorativnye-shtukaturki': 'decor',
-        '/alkidnye-kraski': 'alkid',
-        '/rastvoriteli': 'rastvoriteli'
-    };
-    
-    // Проверяем, есть ли страница в маппинге
-    for (const [path, page] of Object.entries(pageMap)) {
-        if (currentPath === path || currentPath.startsWith(path + '/')) {
-            currentPage = page;
-            break;
+    // Если нет параметра page, пытаемся определить по пути
+    if (!pageParam) {
+        const pageMap = {
+            '/': 'home',
+            '/antiseptiki': 'antiseptiki',
+            '/kraski-interiernye': 'interier',
+            '/kraski-fasadnye': 'fasad',
+            '/laki': 'laki',
+            '/gruntovki': 'gruntovki',
+            '/dekorativnye-shtukaturki': 'decor',
+            '/alkidnye-kraski': 'alkid',
+            '/rastvoriteli': 'rastvoriteli'
+        };
+        
+        for (const [path, page] of Object.entries(pageMap)) {
+            if (currentPath === path || currentPath.startsWith(path + '/')) {
+                currentPage = page;
+                break;
+            }
         }
     }
     
