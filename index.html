@@ -34,6 +34,23 @@
     display: block !important;
 }
 
+/* ===== УЛУЧШАЕМ ЧИТАЕМОСТЬ ЗАГОЛОВКОВ ===== */
+.t-page h1,
+.t-page .category-h1,
+.t-page.active h1 {
+    color: #e8e8e8 !important;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.85) !important;
+    background: rgba(26, 42, 58, 0.35) !important;
+    padding: 14px 28px !important;
+    border-radius: 14px !important;
+    display: inline-block !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    font-weight: 700 !important;
+    font-size: 28px !important;
+}
+
 /* ===== КАРТОЧКИ ТОВАРОВ ===== */
 .t-products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;width:100%;margin:0 auto;padding-top:0}
 .t-product-card{background:rgba(255,255,255,0.95);border-radius:14px;padding:16px 18px 18px;border:1px solid rgba(255,255,255,0.3);box-shadow:0 2px 8px rgba(0,0,0,0.06);transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column;cursor:pointer;backdrop-filter:blur(4px);height:100%;min-height:380px}
@@ -201,7 +218,7 @@
 <div class="t-main-wrap"><main class="t-main">
 
 <!-- ============================================================
-     ГЛАВНАЯ СТРАНИЦА — ЕДИНСТВЕННЫЙ СКРЫТЫЙ H1
+     ГЛАВНАЯ СТРАНИЦА
      ============================================================ -->
 <div class="t-page active" id="page-home">
     <h1 class="visually-hidden">Лакокрасочные материалы для дома и бизнеса</h1>
@@ -251,7 +268,7 @@
 </div>
 
 <!-- ============================================================
-     РАЗДЕЛЫ — H1 ДОБАВЛЯЮТСЯ ЧЕРЕЗ JavaScript
+     РАЗДЕЛЫ КАТАЛОГА
      ============================================================ -->
 <div class="t-page" id="page-antiseptiki">
     <div class="t-products-grid" id="antiseptiki-grid"></div>
@@ -1202,12 +1219,27 @@ window.addEventListener('popstate', function(event) {
 document.addEventListener('DOMContentLoaded', function() {
     loadCart();
     
+    // Определяем текущую страницу по URL
     const currentPath = window.location.pathname;
     let currentPage = 'home';
     
-    for (const [key, meta] of Object.entries(pageMeta)) {
-        if (meta.url === currentPath) {
-            currentPage = key;
+    // Соответствие путей и страниц
+    const pageMap = {
+        '/': 'home',
+        '/antiseptiki': 'antiseptiki',
+        '/kraski-interiernye': 'interier',
+        '/kraski-fasadnye': 'fasad',
+        '/laki': 'laki',
+        '/gruntovki': 'gruntovki',
+        '/dekorativnye-shtukaturki': 'decor',
+        '/alkidnye-kraski': 'alkid',
+        '/rastvoriteli': 'rastvoriteli'
+    };
+    
+    // Проверяем, есть ли страница в маппинге
+    for (const [path, page] of Object.entries(pageMap)) {
+        if (currentPath === path || currentPath.startsWith(path + '/')) {
+            currentPage = page;
             break;
         }
     }
@@ -1215,40 +1247,47 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('📍 Текущая страница:', currentPage);
     console.log('📍 Путь:', currentPath);
     
+    // Если это не главная страница
     if (currentPage !== 'home') {
+        // Находим нужный раздел
         const targetPage = document.getElementById('page-' + currentPage);
         if (targetPage) {
+            // Скрываем все страницы, показываем нужную
             document.querySelectorAll('.t-page').forEach(p => p.classList.remove('active'));
             targetPage.classList.add('active');
             
+            // Активируем соответствующий пункт меню
             document.querySelectorAll('.t-nav-link').forEach(l => l.classList.remove('active'));
             const menuLink = document.querySelector(`.t-nav-link[data-page="${currentPage}"]`);
             if (menuLink) menuLink.classList.add('active');
             
+            // Загружаем товары
             const containerId = currentPage + '-grid';
             const container = document.getElementById(containerId);
-            
-            if (productCache[currentPage]) {
-                console.log('✅ Товары из кеша:', currentPage);
-                container.innerHTML = renderProductCards(productCache[currentPage], currentPage);
-                addCategoryH1(currentPage, container);
-                attachEventHandlers(currentPage);
-            } else {
-                console.log('🔄 Загрузка товаров для:', currentPage);
-                renderProducts(currentPage, containerId);
+            if (container) {
+                // Проверяем кеш
+                if (productCache[currentPage]) {
+                    console.log('✅ Товары из кеша:', currentPage);
+                    container.innerHTML = renderProductCards(productCache[currentPage], currentPage);
+                    addCategoryH1(currentPage, container);
+                    attachEventHandlers(currentPage);
+                } else {
+                    console.log('🔄 Загрузка товаров для:', currentPage);
+                    renderProducts(currentPage, containerId);
+                }
             }
-        } else {
-            console.warn('⚠️ Страница не найдена:', 'page-' + currentPage);
         }
     } else {
+        // Главная страница
         const homePage = document.getElementById('page-home');
         if (homePage) {
             homePage.classList.add('active');
         }
     }
     
+    // Обновляем мета-теги
     updatePageMeta(currentPage);
-
+    
     console.log('✅ КолорМСК загружен');
     console.log('📂 Источник данных:', PRODUCTS_URL);
 });
