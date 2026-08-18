@@ -664,6 +664,7 @@ function renderProductCards(items, categoryKey) {
     return html;
 }
 
+// ===== ПРИВЯЗКА СОБЫТИЙ (ИСПРАВЛЕННАЯ) =====
 function attachEventHandlers(categoryKey) {
     document.querySelectorAll('.t-select-gloss, .t-select-color, .t-select-size').forEach(el => {
         el.addEventListener('change', function() {
@@ -731,7 +732,10 @@ function attachEventHandlers(categoryKey) {
     });
 
     document.querySelectorAll('.t-product-card').forEach(card => {
-        card.addEventListener('click', function(e) {
+        // Удаляем старые обработчики, чтобы не дублировались
+        card.removeEventListener('click', card._clickHandler);
+        // Добавляем новый
+        const handler = function(e) {
             if (e.target.closest('.t-btn-buy') || e.target.closest('.t-btn-detail') || e.target.closest('.t-selectors') || e.target.closest('.t-product-image')) return;
             const container = this.dataset.container;
             const group = parseInt(this.dataset.index);
@@ -741,11 +745,13 @@ function attachEventHandlers(categoryKey) {
                 window.history.pushState({ page: 'product', category: container.replace('-grid', ''), index: group }, productName, productUrl);
             }
             openProductModal(container.replace('-grid', ''), group);
-        });
+        };
+        card._clickHandler = handler;
+        card.addEventListener('click', handler);
     });
 }
 
-// ===== ОСНОВНАЯ ФУНКЦИЯ ЗАГРУЗКИ С КЕШЕМ =====
+// ===== ОСНОВНАЯ ФУНКЦИЯ ЗАГРУЗКИ С КЕШЕМ (ИСПРАВЛЕННАЯ) =====
 async function renderProducts(categoryKey, containerId) {
     const container = document.getElementById(containerId);
     if (!container) {
@@ -753,15 +759,16 @@ async function renderProducts(categoryKey, containerId) {
         return;
     }
 
-    // Проверяем кеш
+    // Показываем, что загрузка началась
+    container.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:#6a7a8a;"><span style="display:inline-block;animation:spin 1s linear infinite;">⟳</span> Загрузка товаров...</div><style>@keyframes spin{100%{transform:rotate(360deg)}}</style>';
+
+    // Проверяем кеш, но если его нет — грузим
     if (productCache[categoryKey]) {
         console.log('✅ Товары из кеша:', categoryKey);
         container.innerHTML = renderProductCards(productCache[categoryKey], categoryKey);
         attachEventHandlers(categoryKey);
         return;
     }
-
-    container.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:#6a7a8a;"><span style="display:inline-block;animation:spin 1s linear infinite;">⟳</span> Загрузка товаров...</div><style>@keyframes spin{100%{transform:rotate(360deg)}}</style>';
 
     try {
         const fileMap = {
@@ -1198,7 +1205,7 @@ window.addEventListener('popstate', function(event) {
     }
 });
 
-// ===== ИНИЦИАЛИЗАЦИЯ =====
+// ===== ИНИЦИАЛИЗАЦИЯ (ИСПРАВЛЕННАЯ) =====
 document.addEventListener('DOMContentLoaded', function() {
     loadCart();
     
