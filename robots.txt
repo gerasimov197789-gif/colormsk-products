@@ -1,7 +1,5 @@
 User-Agent: *
 Disallow: /robots
-Disallow: /page174136109.html
-Disallow: /sitemap
 Disallow: /page179265709.html
 Disallow: /tilda/form*
 Disallow: /tilda/rec*
