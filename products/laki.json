@@ -1,74 +1,835 @@
-[
-  {
-    "brand": "SYMPHONY",
-    "name": "Лак антисептик RESTAVRATOR EP",
-    "desc": "Водоразбавляемый колеруемый экологически чистый лак на акрилатной основе. Предназначен для защитно-декоративной отделки и тонирования деревянных панелей, вагонки, досок, бревен, а также бетонных, кирпичных и оштукатуренных поверхностей внутри помещения. Возможно применение лака снаружи для поверхностей, находящихся под навесом, защищающим от прямых атмосферных воздействий. Содержит комплекс активных добавок безопасных для человека, замедляющих старение и разрушение древесины, и защищающих от воздействия плесени, синевы, грибков и насекомых-древоточцев. Лак не желтеет под действием УФ-излучения, создает эластичную пленку, стойкую к перепадам влажности и температур, придает поверхности водо- и грязеотталкивающие свойства. Сертифицирован для применения в детских учреждениях.",
-    "selectorLabel": "Блеск",
-    "colors": ["Глянцевый", "Шелковисто-матовый"],
-    "photo": "https://static.tildacdn.com/stor3939-3830-4536-b933-343263656234/c0079e12f91034601c9189ccd863746a.jpg",
-    "cat": "Лаки",
-    "tech": "Расход: 6-13 м²/л. Сухой остаток: ок. 25%. Плотность: ок. 1,0 кг/л. Цвет: бесцветный (база ЕР). Колеруется по каталогам цветов «Колеруемые лаки» и «Лессирующие антисептики для дерева». Разбавитель: вода.",
-    "sizes": [
-      {"volume": "1 л", "fill": "0,9 л", "options": [{"color": "Глянцевый", "sku": "00-01100995", "price": 685, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-01100994", "price": 720, "stock": "Много"}]},
-      {"volume": "3 л", "fill": "2,7 л", "options": [{"color": "Глянцевый", "sku": "00-00010320", "price": 2090, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00010318", "price": 2200, "stock": "Много"}]},
-      {"volume": "10 л", "fill": "9 л", "options": [{"color": "Глянцевый", "sku": "00-00010321", "price": 6190, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00010319", "price": 6290, "stock": "Много"}]}
-    ]
-  },
-  {
-    "brand": "SYMPHONY",
-    "name": "Лак мебельный PREMIERA EP",
-    "desc": "Водоразбавляемый колеруемый экологически чистый лак на акрилатной основе с усиленной защитой от ультрафиолета. Применяется для лакировки деревянной мебели, дверей, подоконников, а также стен, потолков и других поверхностей внутри помещений. Применим для наружных поверхностей, находящихся под навесом. Предназначен для лакировки деревянных, бетонных, металлических, алюминиевых и пластиковых поверхностей. Можно лакировать дощатый пол, подвергающийся слабому и среднему износу. Лак придает поверхности грязе- и водоотталкивающие свойства, подчеркивает естественный рисунок и природную красоту древесины, не желтеет под действием УФ-излучения. Лак образует высокопрочную эластичную пленку стойкую к истиранию, воздействию воды и бытовых химикатов. Сертифицирован для применения в детских учреждениях.",
-    "selectorLabel": "Блеск",
-    "colors": ["Матовый", "Шелковисто-матовый"],
-    "photo": "https://static.tildacdn.com/stor3765-3861-4137-b135-663537656433/9bed208b03995ab6616307453f8be640.jpg",
-    "cat": "Лаки",
-    "tech": "Расход: 6-13 м²/л. Сухой остаток: ок. 32%. Плотность: ок. 1,0 кг/л. Цвет: бесцветный (база ЕР). Колеруется по каталогам цветов «Колеруемые лаки» и «Лессирующие антисептики для дерева». Разбавитель: вода.",
-    "sizes": [
-      {"volume": "1 л", "fill": "0,9 л", "options": [{"color": "Матовый", "sku": "00-00013100", "price": 1415, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00013101", "price": 1315, "stock": "Много"}]},
-      {"volume": "3 л", "fill": "2,7 л", "options": [{"color": "Матовый", "sku": "00-00011580", "price": 4190, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00011583", "price": 4050, "stock": "Много"}]},
-      {"volume": "10 л", "fill": "9 л", "options": [{"color": "Матовый", "sku": "00-00011581", "price": 11550, "stock": "Под заказ"}, {"color": "Шелковисто-матовый", "sku": "00-00011584", "price": 11250, "stock": "Под заказ"}]}
-    ]
-  },
-  {
-    "brand": "SYMPHONY",
-    "name": "Лак HARD WOOD Aqua",
-    "desc": "Водоразбавляемый полиуретановый паркетный лак предназначен для лакировки и защиты паркетных и дощатых полов, стен, потолков, мебели и других деревянных поверхностей, подвергающихся особенно сильным механическим нагрузкам в сухих и влажных помещениях. Возможно применение для наружных поверхностей, находящихся под навесом. Лак обладает высокой прочностью и эластичностью, имеет хорошую устойчивость к абразивному износу, воздействию воды и бытовых химикатов. Возможно применение по бетонным, кирпичным и оштукатуренным поверхностям. Сертифицирован для применения в детских учреждениях.",
-    "selectorLabel": "Блеск",
-    "colors": ["Глянцевый", "Шелковисто-матовый"],
-    "photo": "https://static.tildacdn.com/stor3539-3235-4933-a533-323837336130/da0210282234551fbf0dfd38bd24caaa.jpg",
-    "cat": "Лаки",
-    "tech": "Расход: 10-15 м²/л. Сухой остаток: ок. 30%. Плотность: ок. 1,0 кг/л. Цвет: бесцветный, лак не колеруется. Разбавитель: вода.",
-    "sizes": [
-      {"volume": "1 л", "fill": "0,9 л", "options": [{"color": "Глянцевый", "sku": "00-00012980", "price": 2480, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00012983", "price": 2700, "stock": "Много"}]},
-      {"volume": "3 л", "fill": "2,7 л", "options": [{"color": "Глянцевый", "sku": "00-01100439", "price": 6850, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-01100441", "price": 7420, "stock": "Много"}]},
-      {"volume": "10 л", "fill": "9 л", "options": [{"color": "Глянцевый", "sku": "00-01100438", "price": 21490, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-01100440", "price": 23700, "stock": "Много"}]}
-    ]
-  },
-  {
-    "brand": "SYMPHONY",
-    "name": "Лак HARD WOOD яхтный",
-    "desc": "Быстросохнущий влагостойкий полиуретановый лак с УФ-фильтром предназначен для деревянных поверхностей внутри и снаружи помещений. Лак обладает повышенной износоустойчивостью. Применяется для лакировки лодок, полов, дверей, мебели, оконных рам. Применим для новых и ранее лакированных алкидными, уретано-алкидными и полиуретановыми лаками поверхностей. Можно использовать для лакировки полов в танцевальных залах. Пригоден для нанесения на поверхности из кирпича и пористого камня. Возможно применять для пылесвязывания под укрывистые материалы. Лак без резкого запаха. Сертифицирован для применения в детских учреждениях.",
-    "selectorLabel": "Блеск",
-    "colors": ["Глянцевый", "Шелковисто-матовый"],
-    "photo": "https://static.tildacdn.com/stor6131-6530-4235-b764-303531303539/2dd6312cf53e5f5258311601a2d4e841.jpg",
-    "cat": "Лаки",
-    "tech": "Расход: 12-16 м²/л. Сухой остаток: ок. 40%. Плотность: ок. 0,9 кг/л. Цвет: бесцветный (база ЕР), колеруется по каталогам цветов «Колеруемые лаки» и «Лессирующие антисептики для дерева». Разбавитель: уайт-спирит.",
-    "sizes": [
-      {"volume": "1 л", "fill": "0,9 л", "options": [{"color": "Глянцевый", "sku": "00-00009554", "price": 1330, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00009556", "price": 1395, "stock": "Под заказ"}]},
-      {"volume": "3 л", "fill": "2,7 л", "options": [{"color": "Глянцевый", "sku": "00-00009555", "price": 3370, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00009557", "price": 3800, "stock": "Под заказ"}]},
-      {"volume": "10 л", "fill": "9 л", "options": [{"color": "Глянцевый", "sku": "00-00009512", "price": 9560, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00009513", "price": 10490, "stock": "Под заказ"}]}
-    ]
-  },
-  {
-    "brand": "DecoTech",
-    "name": "Лак защитно-декоративный",
-    "desc": "Колеруемый лак с антисептическими добавками. Шелковисто-матовый лак защитно-декоративный предназначен для отделки и защиты внутренних поверхностей в сухих и влажных помещениях, а также для наружных поверхностей под навесом. Лак содержит антисептические компоненты, безопасные для человека, защищает от УФ-излучения, придает поверхности водоотталкивающие свойства. Образует эластичную пленку, стойкую к перепадам температур (от минуса к плюсу, и наоборот). Не применять для лакировки мебели и полов.",
-    "photo": "https://static.tildacdn.com/stor3435-3932-4161-b866-636365336639/fc0dd6ed29780521303a2ee369a5d776.jpg",
-    "cat": "Лаки",
-    "tech": "Расход: 5-12 м²/л. Сухой остаток: ок. 25%. Плотность: ок. 1,0 кг/л. Цвет: бесцветный. Колеруется в цвета, близкие к эталонным, по каталогам «Колеруемые лаки» и «Лессирующие антисептики для дерева». Разбавитель: вода.",
-    "sizes": [
-      {"volume": "2.7 кг", "fill": "2,7 л", "options": [{"sku": "00-00011938", "price": 1055, "stock": "Много"}]},
-      {"volume": "9 кг", "fill": "9 л", "options": [{"sku": "00-00011937", "price": 2925, "stock": "Много"}]}
-    ]
-  }
-]
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>КолорМСК — Каталог ЛКМ</title>
+<style>
+/* ===== ВСЕ СТИЛИ (полная копия из вашего файла) ===== */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background-image:url('https://static.tildacdn.com/tild6161-6432-4533-b862-316337626235/photo.jpg');background-size:cover;background-position:center;background-attachment:fixed;background-repeat:no-repeat;background-color:#f5f5f5;color:#1a2a3a;min-height:100vh}
+.t-header{background:rgba(255,255,255,0);padding:10px 30px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:2px solid rgba(200,200,200,0);position:sticky;top:0;z-index:1000}
+.t-header .t-logo{display:flex;align-items:center;gap:12px}
+.t-header .t-logo .t-logo-img{height:40px;width:auto;border-radius:4px}
+.t-header .t-logo a{font-size:26px;font-weight:700;color:#fff;text-decoration:none;display:flex;align-items:center;gap:8px}
+.t-header .t-logo a span{color:#aaa}
+.t-header .t-logo .t-slogan{font-size:11px;color:rgba(255,255,255,0.6)}
+.t-header .t-contacts{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.t-header .t-contacts a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:13px;transition:color .2s;display:flex;align-items:center;gap:6px}
+.t-header .t-contacts a:hover{color:#fff}
+.t-layout{display:flex;max-width:100%;min-height:100vh;background:0 0;width:100%;align-items:stretch}
+.t-sidebar{width:210px;min-width:210px;background:rgba(26,42,58,0.85);padding:20px 0 0;position:sticky;top:0;align-self:stretch;min-height:100vh;overflow-y:auto;display:flex;flex-direction:column;z-index:100;backdrop-filter:blur(10px)}
+.t-sidebar-nav{display:flex;flex-direction:column;gap:2px;padding:0 10px;flex:1}
+.t-nav-link{display:flex;align-items:center;gap:10px;padding:8px 14px;border-radius:10px;color:rgba(255,255,255,0.65);text-decoration:none;font-size:13px;font-weight:500;transition:all .2s;background:0 0;cursor:pointer;width:100%;font-family:inherit}
+.t-nav-link:hover{background:rgba(255,255,255,0.08);color:#fff}
+.t-nav-link.active{background:rgba(200,200,200,0.15);color:#ddd}
+.t-sidebar-footer{display:none!important}
+.t-main-wrap{flex:1;display:flex;min-width:0;width:100%}
+.t-main{flex:1;padding:20px 24px 30px;min-width:0;background:0 0;margin-top:-10px}
+.t-page{display:none;animation:fadeIn .3s ease}
+.t-page.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.t-home-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:0}
+.t-home-card{background:rgba(255,255,255,0.95);border-radius:16px;padding:20px 16px 24px;text-align:center;border:1px solid rgba(255,255,255,0.3);box-shadow:0 4px 15px rgba(0,0,0,0.06);transition:transform .3s,box-shadow .3s;cursor:pointer;text-decoration:none;color:#1a2a3a;display:flex;flex-direction:column;align-items:center;gap:12px;backdrop-filter:blur(4px)}
+.t-home-card:hover{transform:translateY(-6px);box-shadow:0 12px 35px rgba(0,0,0,0.12);background:rgba(255,255,255,1)}
+.t-home-image-wrapper{width:100%;height:200px;overflow:hidden;border-radius:12px;background:#f8faff;display:flex;align-items:center;justify-content:center}
+.t-home-image{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.t-home-card:hover .t-home-image{transform:scale(1.06)}
+.t-home-title{font-size:18px;font-weight:600;color:#1a2a3a}
+.t-home-desc{font-size:13px;color:#6a7a8a}
+.t-products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;width:100%;margin:0 auto;padding-top:0}
+.t-product-card{background:rgba(255,255,255,0.95);border-radius:14px;padding:16px 18px 18px;border:1px solid rgba(255,255,255,0.3);box-shadow:0 2px 8px rgba(0,0,0,0.06);transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column;cursor:pointer;backdrop-filter:blur(4px);height:100%;min-height:420px}
+.t-product-card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,0.1)}
+.t-product-image{width:100%;height:150px;overflow:hidden;border-radius:10px;margin-bottom:10px;background:#f8faff;border:1px solid #eaedf2;display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative}
+.t-product-image img{width:100%;height:100%;object-fit:contain;transition:transform .3s}
+.t-product-image:hover img{transform:scale(1.05)}
+.t-product-image .t-zoom-hint{position:absolute;bottom:6px;right:6px;background:rgba(0,0,0,0.6);color:#fff;padding:2px 8px;border-radius:12px;font-size:9px;opacity:0;transition:opacity .3s}
+.t-product-image:hover .t-zoom-hint{opacity:1}
+.t-product-brand{font-size:16px;font-weight:700;color:#1a2a3a;margin-bottom:2px}
+.t-product-name{font-size:14px;font-weight:600;color:#2c3e50;line-height:1.3;margin:0 0 3px;min-height:36px}
+.t-product-sku{font-size:11px;color:#9aaabb;margin-bottom:3px}
+.t-product-stock{font-size:11px;font-weight:500;padding:2px 10px;border-radius:20px;display:inline-block;margin-bottom:4px}
+.t-product-stock.in-stock{color:#3d7a4a;background:rgba(61,122,74,0.12)}
+.t-product-stock.low-stock{color:#d4880f;background:rgba(212,136,15,0.12)}
+.t-product-stock.on-order{color:#e74c3c;background:rgba(231,76,60,0.12)}
+.t-selectors{display:flex;flex-wrap:wrap;gap:4px;margin:4px 0 6px}
+.t-select-group{flex:1;min-width:60px}
+.t-select-group label{display:block;font-size:9px;font-weight:600;color:#6a7a8a;text-transform:uppercase;letter-spacing:.2px}
+.t-select-group select{width:100%;padding:2px 4px;border:2px solid #dce3ec;border-radius:5px;background:#f8faff;font-size:11px;color:#1a2a3a;font-family:inherit;cursor:pointer;transition:border-color .2s}
+.t-select-group select:focus{outline:0;border-color:#999}
+.t-short-description{font-size:12px;color:#4a5a6a;line-height:1.3;margin:2px 0 4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:32px}
+.t-full-description{font-size:12px;color:#4a5a6a;line-height:1.4;margin:4px 0 6px;padding:8px 12px;background:rgba(248,250,255,0.95);border-radius:6px;border-left:3px solid #999;display:none;position:relative;z-index:5;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.t-full-description.open{display:block}
+.t-specs-table{width:100%;border-collapse:collapse;margin:2px 0 4px;font-size:11px;border-radius:4px;overflow:hidden}
+.t-specs-table td{padding:2px 6px;border-bottom:1px solid #f0f2f5}
+.t-specs-table tr:last-child td{border-bottom:none}
+.t-specs-table .t-spec-label{font-weight:600;color:#1a2a3a;width:38%;background:rgba(248,250,255,0.9);font-size:10px}
+.t-specs-table .t-spec-value{color:#3d5166;background:rgba(255,255,255,0.9);font-size:10px}
+.t-product-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;padding-top:8px;border-top:1px solid #eaedf2;margin-top:4px}
+.t-product-price{font-size:18px;font-weight:700;color:#1a2a3a}
+.t-product-price .t-currency{font-size:13px;font-weight:400;color:#6a7a8a}
+.t-btn-buy{background:#d0d5dd;color:#1a2a3a;border:none;border-radius:6px;padding:6px 16px;font-size:12px;font-weight:600;cursor:pointer;transition:background .2s;font-family:inherit}
+.t-btn-buy:hover{background:#b8bfc9}
+.t-btn-buy.on-order{background:#d0d5dd;color:#6a7a8a;cursor:default;pointer-events:none;opacity:0.6}
+.t-btn-detail{background:rgba(232,236,242,0.9);color:#1a2a3a;border:none;border-radius:6px;padding:4px 10px;font-size:11px;font-weight:600;cursor:pointer;transition:background .2s;font-family:inherit;width:100%;margin-top:4px}
+.t-btn-detail:hover{background:#d0d6de}
+.t-btn-detail .t-arrow{display:inline-block;transition:transform .3s}
+.t-btn-detail .t-arrow.open{transform:rotate(180deg)}
+.t-sidebar-right{width:210px;min-width:210px;background:rgba(26,42,58,0.85);padding:20px 16px 0;position:sticky;top:0;align-self:stretch;min-height:100vh;overflow-y:auto;display:flex;flex-direction:column;gap:12px;backdrop-filter:blur(10px)}
+.t-sidebar-right .t-sidebar-title{font-size:11px;font-weight:600;color:rgba(255,255,255,0.3);text-transform:uppercase;letter-spacing:1px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.t-sidebar-card{background:rgba(255,255,255,0.05);border-radius:12px;padding:12px;border:1px solid rgba(255,255,255,0.06);transition:transform .2s,background .2s}
+.t-sidebar-card:hover{background:rgba(255,255,255,0.08);transform:translateY(-2px)}
+.t-sidebar-card h3{font-size:13px;font-weight:700;color:#fff;margin-bottom:4px;display:flex;align-items:center;gap:6px}
+.t-sidebar-card p{font-size:11px;color:rgba(255,255,255,0.6);line-height:1.4;margin-bottom:8px}
+.t-sidebar-card .t-btn-link{display:inline-block;background:rgba(200,200,200,0.2);color:#ccc;padding:5px 12px;border-radius:6px;text-decoration:none;font-weight:600;font-size:11px;transition:background .2s;text-align:center;width:100%;border:1px solid rgba(200,200,200,0.15)}
+.t-sidebar-card .t-btn-link:hover{background:rgba(200,200,200,0.3);color:#fff}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+.t-image-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.92);z-index:999999;justify-content:center;align-items:center;padding:30px;cursor:pointer}
+.t-image-modal.active{display:flex}
+.t-image-modal .t-image-modal-close{position:fixed;top:20px;right:30px;background:0 0;border:none;color:#fff;font-size:44px;cursor:pointer;z-index:1000000}
+.t-image-modal .t-image-modal-img{max-width:95vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,0.5);cursor:default}
+.t-product-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:99999;justify-content:center;align-items:center;padding:30px;overflow-y:auto}
+.t-product-modal.active{display:flex}
+.t-product-modal .t-modal-content{background:rgba(255,255,255,0.97);border-radius:20px;max-width:800px;width:100%;max-height:95vh;overflow-y:auto;padding:30px;position:relative;animation:slideUp .3s ease;backdrop-filter:blur(10px)}
+@keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+.t-product-modal .t-modal-close{position:sticky;top:0;float:right;background:0 0;border:none;font-size:32px;cursor:pointer;color:#999;padding:0 0 0 20px;z-index:10;transition:transform .2s,color .2s}
+.t-product-modal .t-modal-close:hover{color:#000;transform:rotate(90deg)}
+.t-product-modal .t-modal-brand{font-size:18px;font-weight:700;color:#555}
+.t-product-modal .t-modal-name{font-size:24px;font-weight:700;color:#1a2a3a;margin:4px 0 2px;line-height:1.2}
+.t-product-modal .t-modal-sku{font-size:13px;color:#999;margin-bottom:10px}
+.t-product-modal .t-modal-grid{display:flex;gap:20px;flex-wrap:wrap}
+.t-product-modal .t-modal-image{flex:0 0 180px;min-width:130px;background:#f8faff;border-radius:12px;border:1px solid #eaedf2;display:flex;align-items:center;justify-content:center;height:180px;overflow:hidden;cursor:pointer;position:relative}
+.t-product-modal .t-modal-image img{width:100%;height:100%;object-fit:contain}
+.t-product-modal .t-modal-image .t-modal-zoom-hint{position:absolute;bottom:6px;right:6px;background:rgba(0,0,0,0.6);color:#fff;padding:3px 8px;border-radius:12px;font-size:10px}
+.t-product-modal .t-modal-info{flex:1;min-width:160px}
+.t-product-modal .t-modal-price{font-size:28px;font-weight:700;color:#1a2a3a;margin-bottom:4px}
+.t-product-modal .t-modal-price .t-currency{font-size:16px;font-weight:400;color:#6a7a8a}
+.t-product-modal .t-modal-stock{font-size:13px;font-weight:600;padding:3px 12px;border-radius:20px;display:inline-block;margin:2px 0 6px}
+.t-product-modal .t-modal-stock.in-stock{color:#3d7a4a;background:rgba(61,122,74,0.12)}
+.t-product-modal .t-modal-stock.low-stock{color:#d4880f;background:rgba(212,136,15,0.12)}
+.t-product-modal .t-modal-stock.on-order{color:#e74c3c;background:rgba(231,76,60,0.12)}
+.t-product-modal .t-modal-selectors select{width:100%;padding:6px 10px;border:2px solid #dce3ec;border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:4px;background:#f8faff;cursor:pointer}
+.t-product-modal .t-modal-selectors select:focus{outline:0;border-color:#999}
+.t-product-modal .t-modal-description-full{padding:12px 16px;background:rgba(248,250,255,0.9);border-radius:10px;border-left:4px solid #999;margin:10px 0;font-size:14px;line-height:1.6;color:#2c3e50}
+.t-product-modal .t-modal-tech-full{padding:12px 16px;background:rgba(248,250,255,0.9);border-radius:10px;border:1px solid #eaedf2;margin:8px 0;font-size:13px;color:#3d5166;line-height:1.6}
+.t-product-modal .t-modal-tech-full .t-tech-item{display:flex;justify-content:space-between;padding:2px 0;border-bottom:1px dashed #eaeef3}
+.t-product-modal .t-modal-tech-full .t-tech-item:last-child{border-bottom:none}
+.t-product-modal .t-modal-tech-full .t-tech-label{font-weight:600;color:#1a2a3a}
+.t-product-modal .t-modal-tech-full .t-tech-value{color:#4a5a6a}
+.t-product-modal .t-modal-buy{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:12px;border-top:2px solid #eaedf2;margin-top:4px}
+.t-product-modal .t-modal-buy .t-btn-buy{background:#d0d5dd;color:#1a2a3a;border:none;border-radius:10px;padding:12px 30px;font-size:16px;font-weight:600;cursor:pointer;font-family:inherit;transition:background .2s}
+.t-product-modal .t-modal-buy .t-btn-buy:hover{background:#b8bfc9}
+.t-product-modal .t-modal-buy .t-btn-buy.on-order{background:#d0d5dd;color:#6a7a8a;cursor:default;pointer-events:none;opacity:0.6}
+.t-product-modal .t-modal-price-large{font-size:26px;font-weight:700;color:#1a2a3a}
+.t-product-modal .t-modal-price-large .t-currency{font-size:16px;font-weight:400;color:#6a7a8a}
+.t-cart-fab{position:fixed;bottom:30px;right:30px;z-index:99999;background:#d0d5dd;color:#1a2a3a;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 6px 24px rgba(0,0,0,0.25);cursor:pointer;transition:transform .3s,box-shadow .3s;border:none}
+.t-cart-fab:hover{transform:scale(1.08);box-shadow:0 8px 32px rgba(0,0,0,0.3)}
+.t-cart-fab .t-cart-count{position:absolute;top:-4px;right:-4px;background:#e74c3c;color:#fff;font-size:11px;font-weight:700;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(231,76,60,0.4)}
+.t-cart-fab .t-cart-count.hidden{display:none}
+.t-cart-panel{position:fixed;bottom:90px;right:30px;width:400px;max-height:65vh;background:rgba(255,255,255,0.97);backdrop-filter:blur(16px);border-radius:16px;box-shadow:0 12px 48px rgba(0,0,0,0.25);z-index:99998;display:none;flex-direction:column;overflow:hidden;border:1px solid rgba(255,255,255,0.2)}
+.t-cart-panel.open{display:flex;animation:slideUpCart .3s ease}
+@keyframes slideUpCart{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.t-cart-panel .t-cart-header{padding:14px 18px;border-bottom:1px solid #eaedf2;display:flex;justify-content:space-between;align-items:center;background:rgba(248,250,255,0.8)}
+.t-cart-panel .t-cart-header h3{font-size:17px;font-weight:700;color:#1a2a3a}
+.t-cart-panel .t-cart-header .t-cart-close{background:0 0;border:none;font-size:22px;cursor:pointer;color:#999;transition:color .2s;padding:0 6px}
+.t-cart-panel .t-cart-header .t-cart-close:hover{color:#1a2a3a}
+.t-cart-panel .t-cart-items{flex:1;overflow-y:auto;padding:10px 14px;max-height:300px}
+.t-cart-panel .t-cart-empty{padding:30px 20px;text-align:center;color:#6a7a8a;font-size:14px}
+.t-cart-panel .t-cart-empty .t-icon-big{font-size:40px;display:block;margin-bottom:10px}
+.t-cart-item{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid #f0f2f5;align-items:center}
+.t-cart-item:last-child{border-bottom:none}
+.t-cart-item .t-cart-item-img{width:40px;height:40px;border-radius:6px;background:#f8faff;border:1px solid #eaedf2;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}
+.t-cart-item .t-cart-item-img img{width:100%;height:100%;object-fit:contain}
+.t-cart-item .t-cart-item-info{flex:1;min-width:0}
+.t-cart-item .t-cart-item-info .t-cart-item-name{font-size:12px;font-weight:600;color:#1a2a3a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.t-cart-item .t-cart-item-info .t-cart-item-sku{font-size:10px;color:#9aaabb}
+.t-cart-item .t-cart-item-info .t-cart-item-params{font-size:11px;color:#6a7a8a}
+.t-cart-item .t-cart-item-qty{display:flex;align-items:center;gap:4px}
+.t-cart-item .t-cart-item-qty button{width:22px;height:22px;border-radius:50%;border:1px solid #dce3ec;background:#f8faff;cursor:pointer;font-size:12px;font-weight:700;color:#1a2a3a;transition:all .2s;display:flex;align-items:center;justify-content:center}
+.t-cart-item .t-cart-item-qty button:hover{background:#d0d5dd;color:#1a2a3a;border-color:#b8bfc9}
+.t-cart-item .t-cart-item-qty span{font-size:13px;font-weight:600;color:#1a2a3a;min-width:24px;text-align:center}
+.t-cart-item .t-cart-item-price{font-size:14px;font-weight:700;color:#1a2a3a;min-width:70px;text-align:right}
+.t-cart-item .t-cart-item-remove{background:0 0;border:none;color:#ccc;cursor:pointer;font-size:16px;transition:color .2s;padding:0 4px}
+.t-cart-item .t-cart-item-remove:hover{color:#e74c3c}
+.t-cart-footer{padding:12px 18px;border-top:1px solid #eaedf2;background:rgba(248,250,255,0.8)}
+.t-cart-footer .t-cart-total{display:flex;justify-content:space-between;font-size:17px;font-weight:700;color:#1a2a3a;margin-bottom:8px}
+.t-cart-footer .t-cart-total .t-cart-total-price{color:#1a2a3a}
+.t-cart-footer .t-cart-actions{display:flex;gap:8px}
+.t-cart-footer .t-cart-actions button{flex:1;padding:8px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:background .2s;border:none}
+.t-cart-footer .t-cart-clear{background:#e74c3c;color:#fff}
+.t-cart-footer .t-cart-clear:hover{background:#c0392b}
+.t-cart-footer .t-cart-checkout{background:#d0d5dd;color:#1a2a3a;flex:2}
+.t-cart-footer .t-cart-checkout:hover{background:#b8bfc9}
+.t-checkout-modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:999999;justify-content:center;align-items:center;padding:20px}
+.t-checkout-modal.active{display:flex}
+.t-checkout-modal .t-checkout-content{background:rgba(255,255,255,0.98);backdrop-filter:blur(16px);border-radius:20px;max-width:500px;width:100%;max-height:95vh;overflow-y:auto;padding:28px;position:relative;animation:slideUp .3s ease}
+.t-checkout-modal .t-checkout-close{position:absolute;top:14px;right:18px;background:0 0;border:none;font-size:26px;cursor:pointer;color:#999;transition:color .2s}
+.t-checkout-modal .t-checkout-close:hover{color:#1a2a3a}
+.t-checkout-modal h2{font-size:22px;font-weight:700;color:#1a2a3a;margin-bottom:4px}
+.t-checkout-modal .t-checkout-sub{color:#6a7a8a;font-size:13px;margin-bottom:16px}
+.t-checkout-modal .t-checkout-form label{display:block;font-size:12px;font-weight:600;color:#1a2a3a;margin-bottom:3px}
+.t-checkout-modal .t-checkout-form input,.t-checkout-modal .t-checkout-form textarea{width:100%;padding:8px 12px;border:2px solid #dce3ec;border-radius:8px;font-size:13px;font-family:inherit;margin-bottom:10px;transition:border-color .2s;background:#f8faff}
+.t-checkout-modal .t-checkout-form input:focus,.t-checkout-modal .t-checkout-form textarea:focus{outline:0;border-color:#999}
+.t-checkout-modal .t-checkout-form textarea{resize:vertical;min-height:60px}
+.t-checkout-modal .t-checkout-summary{background:rgba(248,250,255,0.9);border-radius:10px;padding:12px 14px;margin-bottom:14px}
+.t-checkout-modal .t-checkout-summary .t-checkout-summary-item{display:flex;justify-content:space-between;font-size:13px;padding:2px 0;color:#4a5a6a}
+.t-checkout-modal .t-checkout-summary .t-checkout-summary-total{display:flex;justify-content:space-between;font-size:17px;font-weight:700;color:#1a2a3a;padding-top:6px;border-top:2px solid #eaedf2;margin-top:4px}
+.t-checkout-modal .t-checkout-submit{width:100%;padding:12px;background:#d0d5dd;color:#1a2a3a;border:none;border-radius:10px;font-size:16px;font-weight:600;cursor:pointer;transition:background .2s;font-family:inherit}
+.t-checkout-modal .t-checkout-submit:hover{background:#b8bfc9}
+.t-checkout-modal .t-checkout-success{display:none;text-align:center;padding:30px 20px}
+.t-checkout-modal .t-checkout-success .t-icon-big{font-size:56px;display:block;margin-bottom:10px}
+.t-checkout-modal .t-checkout-success h3{font-size:20px;color:#3d7a4a;margin-bottom:4px}
+.t-checkout-modal .t-checkout-success p{color:#6a7a8a;font-size:13px}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+@media(max-width:1200px){.t-home-grid{grid-template-columns:repeat(3,1fr)}.t-products-grid{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}}
+@media(max-width:900px){.t-header{padding:10px 16px;flex-direction:column;align-items:stretch;gap:8px}.t-header .t-logo a{font-size:22px}.t-header .t-contacts{justify-content:center;gap:12px}.t-product-modal .t-modal-grid{flex-direction:column}.t-product-modal .t-modal-image{height:140px;flex:none;width:100%}.t-product-modal .t-modal-content{padding:18px}.t-home-grid{grid-template-columns:repeat(2,1fr)}.t-home-image-wrapper{height:160px}.t-home-title{font-size:16px}.t-products-grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}}
+@media(max-width:768px){.t-layout{flex-direction:column}.t-sidebar{width:100%;min-width:auto;height:auto;min-height:auto;position:static;padding:10px;flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px;backdrop-filter:blur(10px)}.t-sidebar-nav{flex-direction:row;flex-wrap:wrap;padding:0;gap:3px;flex:1;justify-content:flex-start}.t-nav-link{padding:5px 10px;font-size:11px;width:auto;border-radius:16px}.t-sidebar-footer{display:none!important}.t-main-wrap{flex-direction:column}.t-main{padding:12px}.t-sidebar-right{width:100%;min-width:auto;height:auto;min-height:auto;position:static;flex-direction:row;flex-wrap:wrap;gap:10px;padding:10px 14px;background:rgba(26,42,58,0.85)}.t-sidebar-right .t-sidebar-title{display:none}.t-sidebar-right .t-sidebar-card{flex:1;min-width:140px}.t-sidebar-right .t-sidebar-footer-text{display:none!important}.t-products-grid{grid-template-columns:1fr 1fr;gap:12px}.t-product-card{min-height:320px}.t-product-image{height:110px}.t-product-brand{font-size:14px}.t-product-name{font-size:13px}.t-product-footer{flex-direction:column;align-items:stretch}.t-btn-buy{text-align:center}.t-product-modal{padding:12px}.t-product-modal .t-modal-content{padding:14px;border-radius:12px}.t-product-modal .t-modal-image{height:120px}.t-product-modal .t-modal-buy{flex-direction:column;align-items:stretch}.t-product-modal .t-modal-buy .t-btn-buy{text-align:center}.t-product-modal .t-modal-name{font-size:20px}.t-home-grid{grid-template-columns:repeat(2,1fr)}.t-home-image-wrapper{height:120px}.t-home-title{font-size:14px}.t-home-desc{font-size:11px}.t-cart-panel{width:calc(100vw - 20px);right:10px;bottom:80px;max-height:55vh}}
+@media(max-width:480px){.t-header .t-contacts{flex-direction:column;align-items:center;gap:6px}.t-sidebar-right .t-sidebar-card{min-width:100%}.t-products-grid{grid-template-columns:1fr}.t-product-card{min-height:300px}.t-product-image{height:100px}.t-product-brand{font-size:13px}.t-product-name{font-size:12px}.t-product-price{font-size:16px}.t-home-grid{grid-template-columns:1fr 1fr}.t-home-image-wrapper{height:100px}.t-home-title{font-size:13px}.t-home-desc{font-size:10px}.t-home-card{padding:12px;gap:8px}.t-cart-fab{width:50px;height:50px;font-size:22px;bottom:16px;right:16px}}
+.t-omnibar,.t-omnibar__wrapper,.t-footer__bottom,.t-footer__made{display:none!important}
+@media(max-width:768px){.t-header{padding:4px 8px!important;gap:4px!important;flex-wrap:nowrap!important;position:sticky!important;top:0!important;z-index:1000!important;background:rgba(0,0,0,0.75)!important;backdrop-filter:blur(8px)!important;border-bottom:1px solid rgba(255,255,255,0.05)!important;min-height:40px!important;align-items:center!important}.t-header .t-logo{gap:4px!important;flex-shrink:0!important}.t-header .t-logo .t-logo-img{height:24px!important;width:auto!important}.t-header .t-logo a{font-size:13px!important;font-weight:600!important;color:#fff!important}.t-header .t-logo .t-slogan{display:none!important}.t-header .t-contacts{gap:4px!important;flex-shrink:0!important;flex-wrap:nowrap!important}.t-header .t-contacts a{font-size:9px!important;gap:2px!important;color:rgba(255,255,255,0.8)!important;white-space:nowrap!important}#t-search-header-container{max-width:100px!important;min-width:50px!important;margin:0 2px 0 auto!important;flex-shrink:1!important}#t-search-header-container input{padding:2px 6px!important;font-size:9px!important;border-radius:12px!important;background:rgba(255,255,255,0.1)!important;border:1px solid rgba(255,255,255,0.15)!important;color:#fff!important}#t-search-header-container input::placeholder{font-size:8px!important;color:rgba(255,255,255,0.5)!important}}
+@media(max-width:480px){.t-header{padding:2px 4px!important;min-height:34px!important;gap:2px!important}.t-header .t-logo .t-logo-img{height:18px!important}.t-header .t-logo a{font-size:11px!important}.t-header .t-contacts a{font-size:7px!important}#t-search-header-container{max-width:70px!important;min-width:40px!important}#t-search-header-container input{padding:1px 4px!important;font-size:7px!important}#t-search-header-container input::placeholder{font-size:6px!important}}
+</style>
+</head>
+<body>
+<header class="t-header">
+    <div class="t-logo">
+        <img class="t-logo-img" src="https://static.tildacdn.com/tild6262-3633-4265-b336-363136653061/logo.png" alt="КолорМСК">
+        <div>
+            <a href="/">КолорМСК</a>
+            <div class="t-slogan">Лакокрасочные материалы</div>
+        </div>
+    </div>
+    <div id="t-search-header-container" style="flex:0 0 auto;max-width:240px;min-width:120px;margin:0 8px 0 auto;">
+        <div style="position:relative;">
+            <input type="text" id="t-search-header-input" placeholder="🔍 Поиск..." style="width:100%;padding:6px 12px;border:2px solid rgba(255,255,255,0.15);border-radius:20px;font-size:12px;background:rgba(255,255,255,0.1);color:#fff;font-family:inherit;transition:all .3s;outline:none;">
+            <div id="t-search-header-results" style="display:none;position:absolute;top:100%;left:0;right:0;background:rgba(30,30,30,0.95);border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.3);z-index:1000;max-height:350px;overflow-y:auto;margin-top:4px;border:1px solid rgba(255,255,255,0.1);backdrop-filter:blur(10px);"></div>
+        </div>
+    </div>
+    <div class="t-contacts">
+        <a href="mailto:info@colormsk.ru">✉️ info@colormsk.ru</a>
+        <a href="tel:+74951234567">📞 +7 (495) 123-45-67</a>
+    </div>
+</header>
+<div class="t-layout"><aside class="t-sidebar"><nav class="t-sidebar-nav">
+<a href="#section-home" class="t-nav-link active" data-page="home">Главная</a>
+<a href="#section-antiseptiki" class="t-nav-link" data-page="antiseptiki">Антисептики</a>
+<a href="#section-interier" class="t-nav-link" data-page="interier">Краски интерьерные</a>
+<a href="#section-fasad" class="t-nav-link" data-page="fasad">Краски фасадные</a>
+<a href="#section-laki" class="t-nav-link" data-page="laki">Лаки</a>
+<a href="#section-gruntovki" class="t-nav-link" data-page="gruntovki">Грунтовки и Шпатлевки</a>
+<a href="#section-decor" class="t-nav-link" data-page="decor">Декоративные штукатурки</a>
+<a href="#section-alkid" class="t-nav-link" data-page="alkid">Эмали</a>
+<a href="#section-rastvoriteli" class="t-nav-link" data-page="rastvoriteli">Растворители</a>
+</nav><div class="t-sidebar-footer"></div></aside>
+<div class="t-main-wrap"><main class="t-main">
+
+<div class="t-page active" id="page-home">
+    <h1 style="font-size:28px;font-weight:700;color:#1a2a3a;margin-bottom:24px;text-align:center;text-shadow:0 2px 8px rgba(255,255,255,0.8);">
+        Лакокрасочные материалы для дома и бизнеса
+    </h1>
+    <div class="t-home-grid">
+        <a href="#section-antiseptiki" class="t-home-card"><div class="t-home-image-wrapper"><img class="t-home-image" src="https://static.tildacdn.com/tild3930-3234-4934-b663-313466326162/photo.jpg" alt="Антисептики"></div><span class="t-home-title">Антисептики</span><span class="t-home-desc">Защита древесины</span></a>
+        <a href="#section-interier" class="t-home-card"><div class="t-home-image-wrapper"><img class="t-home-image" src="https://static.tildacdn.com/tild3530-6265-4663-a561-626433386539/photo.jpg" alt="Краски интерьерные"></div><span class="t-home-title">Краски интерьерные</span><span class="t-home-desc">Для стен и потолков</span></a>
+        <a href="#section-fasad" class="t-home-card"><div class="t-home-image-wrapper"><img class="t-home-image" src="https://static.tildacdn.com/tild3331-3138-4065-b432-376239613433/_.jpeg" alt="Краски фасадные"></div><span class="t-home-title">Краски фасадные</span><span class="t-home-desc">Для наружных работ</span></a>
+        <a href="#section-laki" class="t-home-card"><div class="t-home-image-wrapper"><img class="t-home-image" src="https://static.tildacdn.com/tild3535-3931-4263-b535-333531656663/photo.jpg" alt="Лаки"></div><span class="t-home-title">Лаки</span><span class="t-home-desc">Защита и блеск</span></a>
+        <a href="#section-gruntovki" class="t-home-card"><div class="t-home-image-wrapper"><img class="t-home-image" src="https://static.tildacdn.com/tild3830-3135-4065-a332-646335316437/__.jpg" alt="Грунтовки"></div><span class="t-home-title">Грунтовки и Шпатлевки</span><span class="t-home-desc">Подготовка поверхности</span></a>
+        <a href="#section-decor" class="t-home-card"><div class="t-home-image-wrapper"><img class="t-home-image" src="https://static.tildacdn.com/tild6263-3239-4664-a665-616337613530/_.jpg" alt="Декоративные штукатурки"></div><span class="t-home-title">Декоративные штукатурки</span><span class="t-home-desc">Для создания фактур</span></a>
+        <a href="#section-alkid" class="t-home-card"><div class="t-home-image-wrapper"><img class="t-home-image" src="https://static.tildacdn.com/tild6432-3630-4734-b266-353030303362/noroot.png" alt="Эмали"></div><span class="t-home-title">Эмали</span><span class="t-home-desc">Для металла и дерева</span></a>
+        <a href="#section-rastvoriteli" class="t-home-card"><div class="t-home-image-wrapper"><img class="t-home-image" src="https://static.tildacdn.com/tild3338-3665-4566-b235-643939653261/photo.jpg" alt="Растворители"></div><span class="t-home-title">Растворители</span><span class="t-home-desc">Для красок и лаков</span></a>
+    </div>
+</div>
+
+<div class="t-page" id="page-antiseptiki"><h2 class="visually-hidden">Антисептики для дерева</h2><div class="t-products-grid" id="antiseptiki-grid"><div style="grid-column:1/-1;text-align:center;padding:40px;color:#6a7a8a;">⚠️ Данные загружаются...</div></div></div>
+<div class="t-page" id="page-interier"><h2 class="visually-hidden">Интерьерные краски для стен и потолков</h2><div class="t-products-grid" id="interier-grid"><div style="grid-column:1/-1;text-align:center;padding:40px;color:#6a7a8a;">⚠️ Данные загружаются...</div></div></div>
+<div class="t-page" id="page-fasad"><h2 class="visually-hidden">Фасадные краски для наружных работ</h2><div class="t-products-grid" id="fasad-grid"><div style="grid-column:1/-1;text-align:center;padding:40px;color:#6a7a8a;">⚠️ Данные загружаются...</div></div></div>
+<div class="t-page" id="page-laki"><h2 class="visually-hidden">Лаки для дерева и мебели</h2><div class="t-products-grid" id="laki-grid"></div></div>
+<div class="t-page" id="page-gruntovki"><h2 class="visually-hidden">Грунтовки и шпатлевки</h2><div class="t-products-grid" id="gruntovki-grid"><div style="grid-column:1/-1;text-align:center;padding:40px;color:#6a7a8a;">⚠️ Данные загружаются...</div></div></div>
+<div class="t-page" id="page-decor"><h2 class="visually-hidden">Декоративные штукатурки</h2><div class="t-products-grid" id="decor-grid"><div style="grid-column:1/-1;text-align:center;padding:40px;color:#6a7a8a;">⚠️ Данные загружаются...</div></div></div>
+<div class="t-page" id="page-alkid"><h2 class="visually-hidden">Алкидные краски и эмали</h2><div class="t-products-grid" id="alkid-grid"><div style="grid-column:1/-1;text-align:center;padding:40px;color:#6a7a8a;">⚠️ Данные загружаются...</div></div></div>
+<div class="t-page" id="page-rastvoriteli"><h2 class="visually-hidden">Растворители для красок и лаков</h2><div class="t-products-grid" id="rastvoriteli-grid"><div style="grid-column:1/-1;text-align:center;padding:40px;color:#6a7a8a;">⚠️ Данные загружаются...</div></div></div>
+</main>
+
+<aside class="t-sidebar-right">
+    <div style="background:rgba(255,255,255,0.05);border-radius:12px;padding:12px 14px;border:1px solid rgba(255,255,255,0.06);">
+        <div id="t-profile-login" style="display:block;">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;">
+                <input type="email" id="t-profile-email" placeholder="📧 Email" style="flex:1;min-width:80px;padding:6px 10px;border:2px solid rgba(255,255,255,0.1);border-radius:6px;font-size:11px;background:rgba(255,255,255,0.08);color:#fff;font-family:inherit;outline:none;">
+                <input type="password" id="t-profile-password" placeholder="🔒 Пароль" style="flex:1;min-width:80px;padding:6px 10px;border:2px solid rgba(255,255,255,0.1);border-radius:6px;font-size:11px;background:rgba(255,255,255,0.08);color:#fff;font-family:inherit;outline:none;">
+                <button onclick="tProfileLogin()" style="padding:6px 14px;background:rgba(200,200,200,0.2);color:#ccc;border:1px solid rgba(255,255,255,0.1);border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;transition:background .2s;font-family:inherit;white-space:nowrap;">Войти</button>
+                <button onclick="tProfileRegister()" style="padding:6px 14px;background:rgba(200,200,200,0.1);color:#aaa;border:1px solid rgba(255,255,255,0.05);border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;transition:background .2s;font-family:inherit;white-space:nowrap;">Регистрация</button>
+            </div>
+            <div id="t-profile-message" style="margin-top:6px;font-size:11px;display:none;"></div>
+        </div>
+        <div id="t-profile-dashboard" style="display:none;">
+            <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:4px;">
+                <span style="font-size:12px;color:#fff;">👤 <span id="t-profile-name">Пользователь</span></span>
+                <button onclick="tProfileLogout()" style="padding:4px 12px;background:rgba(231,76,60,0.3);color:#e74c3c;border:1px solid rgba(231,76,60,0.2);border-radius:6px;font-size:10px;cursor:pointer;transition:background .2s;font-family:inherit;">Выйти</button>
+            </div>
+            <div style="margin-top:6px;font-size:11px;color:rgba(255,255,255,0.6);">
+                <span id="t-profile-email-display">—</span>
+            </div>
+            <div id="t-profile-orders" style="margin-top:6px;font-size:11px;color:rgba(255,255,255,0.5);max-height:80px;overflow-y:auto;"></div>
+        </div>
+    </div>
+    <div style="background:#f0f2f5;border-radius:12px;padding:14px 16px;">
+        <h3 style="color:#1a2a3a;font-size:14px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px;">🌈 Каталоги цветов</h3>
+        <p style="color:#4a5a6a;font-size:12px;line-height:1.5;margin-bottom:10px;">Более 15 000 оттенков по RAL, NCS, Monicolor.</p>
+        <a href="/catalog-colors" style="display:block;background:rgba(200,200,200,0.3);color:#1a2a3a;padding:7px 14px;border-radius:8px;text-align:center;font-weight:600;font-size:12px;text-decoration:none;border:1px solid rgba(0,0,0,0.08);">🌐 Перейти в каталог</a>
+    </div>
+    <div style="background:#f0f2f5;border-radius:12px;padding:14px 16px;margin-top:8px;">
+        <h3 style="color:#1a2a3a;font-size:14px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:8px;">📖 Полезная информация</h3>
+        <p style="color:#4a5a6a;font-size:12px;line-height:1.5;margin-bottom:10px;">Основные сведения о ЛКМ, технологии окраски.</p>
+        <a href="/info" style="display:block;background:rgba(200,200,200,0.2);color:#1a2a3a;padding:7px 14px;border-radius:8px;text-align:center;font-weight:600;font-size:12px;text-decoration:none;border:1px solid rgba(0,0,0,0.08);">📚 Читать подробнее</a>
+    </div>
+    <div class="t-sidebar-footer-text"></div>
+</aside>
+</div></div>
+
+<button class="t-cart-fab" id="t-cart-fab" onclick="toggleCart()">🛒<span class="t-cart-count hidden" id="t-cart-count">0</span></button>
+<div class="t-cart-panel" id="t-cart-panel"><div class="t-cart-header"><h3>🛒 Корзина</h3><button class="t-cart-close" onclick="toggleCart()">✕</button></div><div class="t-cart-items" id="t-cart-items"><div class="t-cart-empty"><span class="t-icon-big">🛒</span>Корзина пуста<br><span style="font-size:13px;color:#9aaabb">Добавьте товары из каталога</span></div></div><div class="t-cart-footer" id="t-cart-footer" style="display:none"><div class="t-cart-total"><span>Итого:</span><span class="t-cart-total-price" id="t-cart-total">0 ₽</span></div><div class="t-cart-actions"><button class="t-cart-clear" onclick="clearCart()">🗑 Очистить</button><button class="t-cart-checkout" onclick="openCheckout()">Оформить заказ</button></div></div></div>
+<div class="t-checkout-modal" id="t-checkout-modal"><div class="t-checkout-content"><button class="t-checkout-close" onclick="closeCheckout()">✕</button>
+<div id="t-checkout-form-wrap"><h2>📦 Оформление заказа</h2><p class="t-checkout-sub">Заполните контактные данные</p>
+<form class="t-checkout-form" id="t-checkout-form" onsubmit="submitOrder(event)">
+<label for="checkout-name">Ваше имя *</label><input type="text" id="checkout-name" placeholder="Иван Иванов" required>
+<label for="checkout-phone">Телефон *</label><input type="tel" id="checkout-phone" placeholder="+7 (999) 123-45-67" required>
+<label for="checkout-email">Email</label><input type="email" id="checkout-email" placeholder="ivan@example.com">
+<label for="checkout-comment">Комментарий</label><textarea id="checkout-comment" placeholder="Дополнительная информация"></textarea>
+<div class="t-checkout-summary" id="t-checkout-summary"><div id="t-checkout-items-list"></div><div class="t-checkout-summary-total"><span>Итого:</span><span id="t-checkout-total">0 ₽</span></div></div>
+<button type="submit" class="t-checkout-submit">✅ Отправить заказ</button>
+</form></div>
+<div class="t-checkout-success" id="t-checkout-success"><span class="t-icon-big">✅</span><h3>Заказ успешно отправлен!</h3><p>Мы свяжемся с вами в ближайшее время.</p><br><button class="t-checkout-submit" onclick="closeCheckout()" style="width:auto;padding:10px 30px">Закрыть</button></div>
+</div></div>
+<div class="t-image-modal" id="t-image-modal"><button class="t-image-modal-close" onclick="closeImageModal()">×</button><img class="t-image-modal-img" id="t-image-modal-img" src=""></div>
+<div class="t-product-modal" id="t-product-modal"><div class="t-modal-content"><button class="t-modal-close" onclick="closeProductModal()">×</button>
+<div class="t-modal-brand" id="modal-brand">SYMPHONY</div><h2 class="t-modal-name" id="modal-name">Название</h2><div class="t-modal-sku" id="modal-sku">Артикул: —</div>
+<div class="t-modal-grid"><div class="t-modal-image" onclick="openImageModal(document.getElementById('modal-img').src)"><img id="modal-img" src=""><span class="t-modal-zoom-hint">🔍 Увеличить</span></div>
+<div class="t-modal-info"><div class="t-modal-price" id="modal-price">0 ₽</div><div class="t-modal-stock" id="modal-stock">✓ В наличии</div><div class="t-modal-selectors" id="modal-selectors"></div></div></div>
+<div class="t-modal-description-full"><strong>📋 Описание:</strong><br><span id="modal-desc-text"></span></div>
+<div class="t-modal-tech-full"><strong>⚙️ Характеристики:</strong><div id="modal-tech-items"></div></div>
+<div class="t-modal-buy"><div class="t-modal-price-large" id="modal-price-large">0 ₽</div><button class="t-btn-buy" id="modal-buy-btn" onclick="buyFromModal()">🛒 В корзину</button></div>
+</div></div>
+
+<script>
+// ============================================================
+// ДАННЫЕ С ТОВАРАМИ (РАЗДЕЛ "ЛАКИ" - ПОЛНАЯ ВЕРСИЯ)
+// ============================================================
+const PRODUCTS_DATA = {
+  "laki": [
+    {
+      "brand": "SYMPHONY",
+      "name": "Лак антисептик RESTAVRATOR EP",
+      "desc": "Водоразбавляемый колеруемый экологически чистый лак на акрилатной основе. Предназначен для защитно-декоративной отделки и тонирования деревянных панелей, вагонки, досок, бревен, а также бетонных, кирпичных и оштукатуренных поверхностей внутри помещения. Возможно применение лака снаружи для поверхностей, находящихся под навесом, защищающим от прямых атмосферных воздействий. Содержит комплекс активных добавок безопасных для человека, замедляющих старение и разрушение древесины, и защищающих от воздействия плесени, синевы, грибков и насекомых-древоточцев. Лак не желтеет под действием УФ-излучения, создает эластичную пленку, стойкую к перепадам влажности и температур, придает поверхности водо- и грязеотталкивающие свойства. Сертифицирован для применения в детских учреждениях.",
+      "selectorLabel": "Блеск",
+      "colors": ["Глянцевый", "Шелковисто-матовый"],
+      "photo": "https://static.tildacdn.com/stor3939-3830-4536-b933-343263656234/c0079e12f91034601c9189ccd863746a.jpg",
+      "cat": "Лаки",
+      "tech": "Расход: 6-13 м²/л. Сухой остаток: ок. 25%. Плотность: ок. 1,0 кг/л. Цвет: бесцветный (база ЕР). Колеруется по каталогам цветов «Колеруемые лаки» и «Лессирующие антисептики для дерева». Разбавитель: вода.",
+      "sizes": [
+        {"volume": "1 л", "fill": "0,9 л", "options": [{"color": "Глянцевый", "sku": "00-01100995", "price": 685, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-01100994", "price": 720, "stock": "Много"}]},
+        {"volume": "3 л", "fill": "2,7 л", "options": [{"color": "Глянцевый", "sku": "00-00010320", "price": 2090, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00010318", "price": 2200, "stock": "Много"}]},
+        {"volume": "10 л", "fill": "9 л", "options": [{"color": "Глянцевый", "sku": "00-00010321", "price": 6190, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00010319", "price": 6290, "stock": "Много"}]}
+      ]
+    },
+    {
+      "brand": "SYMPHONY",
+      "name": "Лак мебельный PREMIERA EP",
+      "desc": "Водоразбавляемый колеруемый экологически чистый лак на акрилатной основе с усиленной защитой от ультрафиолета. Применяется для лакировки деревянной мебели, дверей, подоконников, а также стен, потолков и других поверхностей внутри помещений. Применим для наружных поверхностей, находящихся под навесом. Предназначен для лакировки деревянных, бетонных, металлических, алюминиевых и пластиковых поверхностей. Можно лакировать дощатый пол, подвергающийся слабому и среднему износу. Лак придает поверхности грязе- и водоотталкивающие свойства, подчеркивает естественный рисунок и природную красоту древесины, не желтеет под действием УФ-излучения. Лак образует высокопрочную эластичную пленку стойкую к истиранию, воздействию воды и бытовых химикатов. Сертифицирован для применения в детских учреждениях.",
+      "selectorLabel": "Блеск",
+      "colors": ["Матовый", "Шелковисто-матовый"],
+      "photo": "https://static.tildacdn.com/stor3765-3861-4137-b135-663537656433/9bed208b03995ab6616307453f8be640.jpg",
+      "cat": "Лаки",
+      "tech": "Расход: 6-13 м²/л. Сухой остаток: ок. 32%. Плотность: ок. 1,0 кг/л. Цвет: бесцветный (база ЕР). Колеруется по каталогам цветов «Колеруемые лаки» и «Лессирующие антисептики для дерева». Разбавитель: вода.",
+      "sizes": [
+        {"volume": "1 л", "fill": "0,9 л", "options": [{"color": "Матовый", "sku": "00-00013100", "price": 1415, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00013101", "price": 1315, "stock": "Много"}]},
+        {"volume": "3 л", "fill": "2,7 л", "options": [{"color": "Матовый", "sku": "00-00011580", "price": 4190, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00011583", "price": 4050, "stock": "Много"}]},
+        {"volume": "10 л", "fill": "9 л", "options": [{"color": "Матовый", "sku": "00-00011581", "price": 11550, "stock": "Под заказ"}, {"color": "Шелковисто-матовый", "sku": "00-00011584", "price": 11250, "stock": "Под заказ"}]}
+      ]
+    },
+    {
+      "brand": "SYMPHONY",
+      "name": "Лак HARD WOOD Aqua",
+      "desc": "Водоразбавляемый полиуретановый паркетный лак предназначен для лакировки и защиты паркетных и дощатых полов, стен, потолков, мебели и других деревянных поверхностей, подвергающихся особенно сильным механическим нагрузкам в сухих и влажных помещениях. Возможно применение для наружных поверхностей, находящихся под навесом. Лак обладает высокой прочностью и эластичностью, имеет хорошую устойчивость к абразивному износу, воздействию воды и бытовых химикатов. Возможно применение по бетонным, кирпичным и оштукатуренным поверхностям. Сертифицирован для применения в детских учреждениях.",
+      "selectorLabel": "Блеск",
+      "colors": ["Глянцевый", "Шелковисто-матовый"],
+      "photo": "https://static.tildacdn.com/stor3539-3235-4933-a533-323837336130/da0210282234551fbf0dfd38bd24caaa.jpg",
+      "cat": "Лаки",
+      "tech": "Расход: 10-15 м²/л. Сухой остаток: ок. 30%. Плотность: ок. 1,0 кг/л. Цвет: бесцветный, лак не колеруется. Разбавитель: вода.",
+      "sizes": [
+        {"volume": "1 л", "fill": "0,9 л", "options": [{"color": "Глянцевый", "sku": "00-00012980", "price": 2480, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00012983", "price": 2700, "stock": "Много"}]},
+        {"volume": "3 л", "fill": "2,7 л", "options": [{"color": "Глянцевый", "sku": "00-01100439", "price": 6850, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-01100441", "price": 7420, "stock": "Много"}]},
+        {"volume": "10 л", "fill": "9 л", "options": [{"color": "Глянцевый", "sku": "00-01100438", "price": 21490, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-01100440", "price": 23700, "stock": "Много"}]}
+      ]
+    },
+    {
+      "brand": "SYMPHONY",
+      "name": "Лак HARD WOOD яхтный",
+      "desc": "Быстросохнущий влагостойкий полиуретановый лак с УФ-фильтром предназначен для деревянных поверхностей внутри и снаружи помещений. Лак обладает повышенной износоустойчивостью. Применяется для лакировки лодок, полов, дверей, мебели, оконных рам. Применим для новых и ранее лакированных алкидными, уретано-алкидными и полиуретановыми лаками поверхностей. Можно использовать для лакировки полов в танцевальных залах. Пригоден для нанесения на поверхности из кирпича и пористого камня. Возможно применять для пылесвязывания под укрывистые материалы. Лак без резкого запаха. Сертифицирован для применения в детских учреждениях.",
+      "selectorLabel": "Блеск",
+      "colors": ["Глянцевый", "Шелковисто-матовый"],
+      "photo": "https://static.tildacdn.com/stor6131-6530-4235-b764-303531303539/2dd6312cf53e5f5258311601a2d4e841.jpg",
+      "cat": "Лаки",
+      "tech": "Расход: 12-16 м²/л. Сухой остаток: ок. 40%. Плотность: ок. 0,9 кг/л. Цвет: бесцветный (база ЕР), колеруется по каталогам цветов «Колеруемые лаки» и «Лессирующие антисептики для дерева». Разбавитель: уайт-спирит.",
+      "sizes": [
+        {"volume": "1 л", "fill": "0,9 л", "options": [{"color": "Глянцевый", "sku": "00-00009554", "price": 1330, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00009556", "price": 1395, "stock": "Под заказ"}]},
+        {"volume": "3 л", "fill": "2,7 л", "options": [{"color": "Глянцевый", "sku": "00-00009555", "price": 3370, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00009557", "price": 3800, "stock": "Под заказ"}]},
+        {"volume": "10 л", "fill": "9 л", "options": [{"color": "Глянцевый", "sku": "00-00009512", "price": 9560, "stock": "Много"}, {"color": "Шелковисто-матовый", "sku": "00-00009513", "price": 10490, "stock": "Под заказ"}]}
+      ]
+    },
+    {
+      "brand": "DecoTech",
+      "name": "Лак защитно-декоративный",
+      "desc": "Колеруемый лак с антисептическими добавками. Шелковисто-матовый лак защитно-декоративный предназначен для отделки и защиты внутренних поверхностей в сухих и влажных помещениях, а также для наружных поверхностей под навесом. Лак содержит антисептические компоненты, безопасные для человека, защищает от УФ-излучения, придает поверхности водоотталкивающие свойства. Образует эластичную пленку, стойкую к перепадам температур (от минуса к плюсу, и наоборот). Не применять для лакировки мебели и полов.",
+      "photo": "https://static.tildacdn.com/stor3435-3932-4161-b866-636365336639/fc0dd6ed29780521303a2ee369a5d776.jpg",
+      "cat": "Лаки",
+      "tech": "Расход: 5-12 м²/л. Сухой остаток: ок. 25%. Плотность: ок. 1,0 кг/л. Цвет: бесцветный. Колеруется в цвета, близкие к эталонным, по каталогам «Колеруемые лаки» и «Лессирующие антисептики для дерева». Разбавитель: вода.",
+      "sizes": [
+        {"volume": "2.7 кг", "fill": "2,7 л", "options": [{"sku": "00-00011938", "price": 1055, "stock": "Много"}]},
+        {"volume": "9 кг", "fill": "9 л", "options": [{"sku": "00-00011937", "price": 2925, "stock": "Много"}]}
+      ]
+    }
+  ],
+  "antiseptiki": [],
+  "interier": [],
+  "fasad": [],
+  "gruntovki": [],
+  "decor": [],
+  "alkid": [],
+  "rastvoriteli": []
+};
+
+// ============================================================
+// ОСНОВНЫЕ ФУНКЦИИ (КОРЗИНА, НАВИГАЦИЯ, РЕНДЕРИНГ, МОДАЛКИ)
+// ============================================================
+
+// КОРЗИНА
+let cart = [];
+function loadCart(){try{const s=localStorage.getItem('colormsk_cart');if(s)cart=JSON.parse(s);else cart=[]}catch(e){cart=[]}updateCartUI()}
+function saveCart(){localStorage.setItem('colormsk_cart',JSON.stringify(cart));updateCartUI()}
+function addToCart(product){
+    const key = product.sku + (product.color ? '|' + product.color : '') + (product.gloss ? '|' + product.gloss : '');
+    const existing = cart.find(item => item.key === key);
+    if(existing){existing.qty += 1}else{
+        cart.push({key:key,brand:product.brand,name:product.name,sku:product.sku,price:product.price,
+        color:product.color||'',gloss:product.gloss||'',volume:product.volume||'',fill:product.fill||'',
+        photo:product.photo||'',qty:1})
+    }
+    saveCart();
+    showCartNotification(product.name);
+}
+function removeFromCart(key){cart=cart.filter(item=>item.key!==key);saveCart()}
+function changeQty(key,delta){const item=cart.find(i=>i.key===key);if(!item)return;item.qty+=delta;if(item.qty<=0){cart=cart.filter(i=>i.key!==key)}saveCart()}
+function clearCart(){if(cart.length===0)return;if(confirm('Очистить корзину?')){cart=[];saveCart();updateCartUI()}}
+function updateCartUI(){
+    const countEl=document.getElementById('t-cart-count');
+    const itemsEl=document.getElementById('t-cart-items');
+    const footerEl=document.getElementById('t-cart-footer');
+    const totalEl=document.getElementById('t-cart-total');
+    const totalItems=cart.reduce((sum,item)=>sum+item.qty,0);
+    const totalPrice=cart.reduce((sum,item)=>sum+item.price*item.qty,0);
+    if(totalItems>0){countEl.textContent=totalItems;countEl.classList.remove('hidden')}else{countEl.classList.add('hidden')}
+    if(cart.length===0){itemsEl.innerHTML='<div class="t-cart-empty"><span class="t-icon-big">🛒</span>Корзина пуста<br><span style="font-size:13px;color:#9aaabb">Добавьте товары из каталога</span></div>';footerEl.style.display='none';return}
+    let html='';
+    cart.forEach(item=>{
+        const params=[];if(item.color)params.push('🎨 '+item.color);if(item.gloss)params.push('✨ '+item.gloss);if(item.volume)params.push('📦 '+item.volume);const paramsStr=params.length?params.join(' · '):'';
+        html+=`<div class="t-cart-item"><div class="t-cart-item-img"><img src="${item.photo||'https://static.tildacdn.com/tild6262-3633-4265-b336-363136653061/logo.png'}" alt="${item.name}" loading="lazy"></div><div class="t-cart-item-info"><div class="t-cart-item-name">${item.brand} ${item.name}</div><div class="t-cart-item-sku">Артикул: ${item.sku}</div>${paramsStr?`<div class="t-cart-item-params">${paramsStr}</div>`:''}</div><div class="t-cart-item-qty"><button onclick="changeQty('${item.key}',-1)">−</button><span>${item.qty}</span><button onclick="changeQty('${item.key}',1)">+</button></div><div class="t-cart-item-price">${(item.price*item.qty).toLocaleString()} ₽</div><button class="t-cart-item-remove" onclick="removeFromCart('${item.key}')" title="Удалить">✕</button></div>`;
+    });
+    itemsEl.innerHTML=html;footerEl.style.display='block';totalEl.textContent=totalPrice.toLocaleString()+' ₽';
+}
+function showCartNotification(name){
+    const existing=document.querySelector('.t-cart-toast');if(existing)existing.remove();
+    const toast=document.createElement('div');
+    toast.className='t-cart-toast';
+    toast.style.cssText='position:fixed;bottom:100px;right:100px;background:rgba(50,50,50,0.92);color:#fff;padding:10px 20px;border-radius:12px;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,0.2);z-index:99997;animation:slideUpCart .3s ease;font-weight:500;pointer-events:none;';
+    toast.textContent='✅ '+name+' добавлен в корзину';
+    document.body.appendChild(toast);
+    setTimeout(()=>{toast.style.opacity='0';toast.style.transition='opacity .3s';setTimeout(()=>toast.remove(),300)},2000);
+}
+function toggleCart(){document.getElementById('t-cart-panel').classList.toggle('open')}
+function openCheckout(){if(cart.length===0)return;const modal=document.getElementById('t-checkout-modal');document.getElementById('t-checkout-form-wrap').style.display='block';document.getElementById('t-checkout-success').style.display='none';modal.classList.add('active');document.body.style.overflow='hidden';const listEl=document.getElementById('t-checkout-items-list');let html='';cart.forEach(item=>{html+=`<div class="t-checkout-summary-item"><span>${item.brand} ${item.name} × ${item.qty}</span><span>${(item.price*item.qty).toLocaleString()} ₽</span></div>`});listEl.innerHTML=html;const total=cart.reduce((sum,item)=>sum+item.price*item.qty,0);document.getElementById('t-checkout-total').textContent=total.toLocaleString()+' ₽';}
+function closeCheckout(){document.getElementById('t-checkout-modal').classList.remove('active');document.body.style.overflow=''}
+function submitOrder(e){e.preventDefault();const name=document.getElementById('checkout-name').value.trim();const phone=document.getElementById('checkout-phone').value.trim();if(!name||!phone){alert('Пожалуйста, заполните имя и телефон');return}const orderData={name,phone,email:document.getElementById('checkout-email').value.trim(),comment:document.getElementById('checkout-comment').value.trim(),items:cart.map(item=>({brand:item.brand,name:item.name,sku:item.sku,price:item.price,qty:item.qty,color:item.color,gloss:item.gloss,volume:item.volume})),total:cart.reduce((sum,item)=>sum+item.price*item.qty,0),date:new Date().toISOString()};console.log('Заказ:',orderData);document.getElementById('t-checkout-form-wrap').style.display='none';document.getElementById('t-checkout-success').style.display='block';cart=[];saveCart();updateCartUI();document.getElementById('t-cart-panel').classList.remove('open');}
+document.getElementById('t-checkout-modal').addEventListener('click',function(e){if(e.target===this)closeCheckout()});
+document.addEventListener('click',function(e){const panel=document.getElementById('t-cart-panel');const fab=document.getElementById('t-cart-fab');if(panel.classList.contains('open')&&!panel.contains(e.target)&&!fab.contains(e.target)){panel.classList.remove('open')}});
+
+// НАВИГАЦИЯ
+function showPage(pageId){
+    document.querySelectorAll('.t-page').forEach(p=>p.classList.remove('active'));
+    const target=document.getElementById('page-'+pageId);
+    if(target)target.classList.add('active');
+    document.querySelectorAll('.t-nav-link').forEach(l=>l.classList.remove('active'));
+    const link=document.querySelector('.t-nav-link[data-page="'+pageId+'"]');
+    if(link)link.classList.add('active');
+    if(pageId!=='home' && PRODUCTS_DATA[pageId]){
+        renderProducts(pageId);
+    }
+    window.history.pushState(null,'','#section-'+pageId);
+}
+document.querySelectorAll('.t-nav-link').forEach(link=>{link.addEventListener('click',function(e){e.preventDefault();const page=this.dataset.page;if(page){showPage(page)}})});
+window.addEventListener('popstate',function(){const hash=window.location.hash;if(hash.startsWith('#section-')){const page=hash.replace('#section-','');showPage(page)}});
+
+// РЕНДЕРИНГ ТОВАРОВ
+function renderProducts(categoryKey){
+    const container=document.getElementById(categoryKey+'-grid');
+    if(!container)return;
+    const items=PRODUCTS_DATA[categoryKey];
+    if(!items || items.length===0){container.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:40px;color:#6a7a8a;">⚠️ Товары в этой категории отсутствуют</div>';return}
+    let html='';
+    items.forEach((product,index)=>{
+        const firstSize=product.sizes[0];
+        const firstOpt=firstSize.options[0];
+        const stock=firstOpt.stock||'Много';
+        let stockClass='in-stock';
+        let stockText='✅ В наличии';
+        if(stock==='Под заказ'){stockClass='on-order';stockText='⏳ Под заказ'}
+        else if(stock==='Мало'){stockClass='low-stock';stockText='⚠️ Мало'}
+        const hasColors = product.colors && product.colors.length>0;
+        const hasGloss = product.colors && product.colors.length>0 && product.selectorLabel;
+        const glossLabel = product.selectorLabel || 'Блеск';
+        html+=`<div class="t-product-card" data-container="${categoryKey}" data-index="${index}">
+            <div class="t-product-image" onclick="event.stopPropagation(); openImageModal('${product.photo||''}')">
+                <img src="${product.photo||''}" alt="${product.name}" loading="lazy" onerror="this.style.display='none'">
+                <span class="t-zoom-hint">🔍</span>
+            </div>
+            <div class="t-product-brand">${product.brand}</div>
+            <div class="t-product-name">${product.name}</div>
+            <div class="t-product-sku">Артикул: ${firstOpt.sku}</div>
+            <div class="t-product-stock ${stockClass}">${stockText}</div>
+            <div class="t-selectors">
+                ${hasGloss ? `<div class="t-select-group"><label>✨ ${glossLabel}</label><select class="t-select-gloss" data-container="${categoryKey}" data-index="${index}">${product.colors.map(c=>`<option value="${c}">${c}</option>`).join('')}</select></div>` : ''}
+                <div class="t-select-group"><label>📦 Объём</label><select class="t-select-size" data-container="${categoryKey}" data-index="${index}">${product.sizes.map((s,i)=>`<option value="${i}">${s.volume} (${s.fill})</option>`).join('')}</select></div>
+            </div>
+            <div class="t-short-description">${(product.desc||'').substring(0,150)}...</div>
+            <div class="t-full-description" id="full-${categoryKey}-${index}"><strong>📋 Описание:</strong><br>${product.desc||'Описание отсутствует'}<br><br><strong>Характеристики:</strong><br>${product.tech||''}</div>
+            <table class="t-specs-table">
+                <tr><td class="t-spec-label">Объём</td><td class="t-spec-value">${firstSize.volume}</td></tr>
+                <tr><td class="t-spec-label">Наполнение</td><td class="t-spec-value">${firstSize.fill}</td></tr>
+                <tr><td class="t-spec-label">Бренд</td><td class="t-spec-value">${product.brand}</td></tr>
+                ${hasGloss ? `<tr><td class="t-spec-label">${glossLabel}</td><td class="t-spec-value">${firstOpt.color||'—'}</td></tr>` : ''}
+                <tr><td class="t-spec-label">Наличие</td><td class="t-spec-value">${stockText}</td></tr>
+            </table>
+            <button class="t-btn-detail" data-container="${categoryKey}" data-index="${index}">📖 <span class="t-arrow">▼</span> Подробнее</button>
+            <div class="t-product-footer">
+                <div class="t-product-price" id="price-${categoryKey}-${index}">${firstOpt.price.toLocaleString()} <span class="t-currency">₽</span></div>
+                <button class="t-btn-buy ${stock==='Под заказ'?'on-order':''}" data-container="${categoryKey}" data-index="${index}" ${stock==='Под заказ'?'disabled':''}>${stock==='Под заказ'?'⏳ Под заказ':'🛒 В корзину'}</button>
+            </div>
+        </div>`;
+    });
+    container.innerHTML=html;
+    
+    // Обработчики событий
+    container.querySelectorAll('.t-select-gloss, .t-select-size').forEach(el=>{
+        el.addEventListener('change',function(){
+            const cat=this.dataset.container;
+            const idx=parseInt(this.dataset.index);
+            updateCard(cat,idx);
+        });
+    });
+    container.querySelectorAll('.t-btn-buy:not(.on-order)').forEach(btn=>{
+        btn.addEventListener('click',function(e){
+            e.stopPropagation();
+            const card=this.closest('.t-product-card');
+            if(!card)return;
+            const cat=card.dataset.container;
+            const idx=parseInt(card.dataset.index);
+            const pr=PRODUCTS_DATA[cat][idx];
+            const glossSelect=card.querySelector('.t-select-gloss');
+            const sizeSelect=card.querySelector('.t-select-size');
+            const selectedGloss=glossSelect?glossSelect.value:'';
+            const sizeIndex=sizeSelect?parseInt(sizeSelect.value):0;
+            const sizeItem=pr.sizes[sizeIndex]||pr.sizes[0];
+            let foundOpt=null;
+            if(selectedGloss && pr.colors){
+                for(let opt of sizeItem.options){
+                    if(opt.color===selectedGloss){foundOpt=opt;break}
+                }
+            }
+            if(!foundOpt)foundOpt=sizeItem.options[0];
+            if(foundOpt.stock==='Под заказ'){alert('⏳ Этот товар доступен только под заказ.');return}
+            addToCart({brand:pr.brand||'SYMPHONY',name:pr.name,sku:foundOpt.sku,price:foundOpt.price,color:foundOpt.color||'',gloss:foundOpt.gloss||'',volume:sizeItem.volume||'',fill:sizeItem.fill||'',photo:pr.photo||''});
+        });
+    });
+    container.querySelectorAll('.t-btn-detail').forEach(btn=>{
+        btn.addEventListener('click',function(e){
+            e.stopPropagation();
+            const cat=this.dataset.container;
+            const idx=parseInt(this.dataset.index);
+            const fd=document.getElementById('full-'+cat+'-'+idx);
+            const ar=this.querySelector('.t-arrow');
+            if(fd){
+                if(fd.classList.contains('open')){
+                    fd.classList.remove('open');
+                    if(ar)ar.classList.remove('open');
+                    this.innerHTML='📖 <span class="t-arrow">▼</span> Подробнее';
+                }else{
+                    document.querySelectorAll('.t-full-description.open').forEach(el=>el.classList.remove('open'));
+                    document.querySelectorAll('.t-btn-detail').forEach(el=>{
+                        const otherArrow=el.querySelector('.t-arrow');
+                        if(otherArrow)otherArrow.classList.remove('open');
+                        if(el!==btn)el.innerHTML='📖 <span class="t-arrow">▼</span> Подробнее';
+                    });
+                    fd.classList.add('open');
+                    if(ar)ar.classList.add('open');
+                    this.innerHTML='📖 <span class="t-arrow open">▲</span> Скрыть';
+                }
+            }
+        });
+    });
+    container.querySelectorAll('.t-product-card').forEach(card=>{
+        card.addEventListener('click',function(e){
+            if(e.target.closest('.t-btn-buy')||e.target.closest('.t-btn-detail')||e.target.closest('select')||e.target.closest('.t-product-image')||e.target.closest('.t-selectors'))return;
+            const cat=this.dataset.container;
+            const idx=parseInt(this.dataset.index);
+            openProductModal(cat,idx);
+        });
+    });
+}
+
+function updateCard(cat,idx){
+    const pr=PRODUCTS_DATA[cat][idx];
+    if(!pr)return;
+    const card=document.querySelector('.t-product-card[data-container="'+cat+'"][data-index="'+idx+'"]');
+    if(!card)return;
+    const glossSelect=card.querySelector('.t-select-gloss');
+    const sizeSelect=card.querySelector('.t-select-size');
+    const selectedGloss=glossSelect?glossSelect.value:'';
+    const sizeIndex=sizeSelect?parseInt(sizeSelect.value):0;
+    const sizeItem=pr.sizes[sizeIndex]||pr.sizes[0];
+    let foundOpt=null;
+    if(selectedGloss && pr.colors){
+        for(let opt of sizeItem.options){
+            if(opt.color===selectedGloss){foundOpt=opt;break}
+        }
+    }
+    if(!foundOpt)foundOpt=sizeItem.options[0];
+    const stock=foundOpt.stock||'Много';
+    let stockClass='in-stock',stockText='✅ В наличии';
+    if(stock==='Под заказ'){stockClass='on-order';stockText='⏳ Под заказ'}
+    else if(stock==='Мало'){stockClass='low-stock';stockText='⚠️ Мало'}
+    const skuEl=card.querySelector('.t-product-sku');
+    if(skuEl)skuEl.textContent='Артикул: '+foundOpt.sku;
+    const priceEl=card.querySelector('.t-product-price');
+    if(priceEl)priceEl.innerHTML=foundOpt.price.toLocaleString()+' <span class="t-currency">₽</span>';
+    const stockEl=card.querySelector('.t-product-stock');
+    if(stockEl){stockEl.textContent=stockText;stockEl.className='t-product-stock '+stockClass}
+    const buyBtn=card.querySelector('.t-btn-buy');
+    if(buyBtn){
+        if(stock==='Под заказ'){buyBtn.className='t-btn-buy on-order';buyBtn.textContent='⏳ Под заказ';buyBtn.disabled=true}
+        else{buyBtn.className='t-btn-buy';buyBtn.textContent='🛒 В корзину';buyBtn.disabled=false}
+    }
+    const tbl=card.querySelector('.t-specs-table');
+    if(tbl){
+        const rows=tbl.querySelectorAll('tr');
+        const hasGloss=pr.colors && pr.colors.length>0;
+        const glossLabel=pr.selectorLabel||'Блеск';
+        let data=[['Объём',sizeItem.volume],['Наполнение',sizeItem.fill],['Бренд',pr.brand]];
+        if(hasGloss)data.push([glossLabel,foundOpt.color||'—']);
+        data.push(['Наличие',stockText]);
+        for(let r=0;r<rows.length&&r<data.length;r++){
+            const label=rows[r].querySelector('.t-spec-label');
+            const value=rows[r].querySelector('.t-spec-value');
+            if(label)label.textContent=data[r][0];
+            if(value)value.textContent=data[r][1];
+        }
+    }
+}
+
+// МОДАЛЬНОЕ ОКНО
+let currentModalCat=null,currentModalIdx=null;
+function openProductModal(cat,idx){
+    currentModalCat=cat;currentModalIdx=idx;
+    const pr=PRODUCTS_DATA[cat][idx];
+    if(!pr)return;
+    const modal=document.getElementById('t-product-modal');
+    const firstSize=pr.sizes[0];
+    const firstOpt=firstSize.options[0];
+    document.getElementById('modal-brand').textContent=pr.brand||'SYMPHONY';
+    document.getElementById('modal-name').textContent=pr.name;
+    document.getElementById('modal-sku').textContent='Артикул: '+firstOpt.sku;
+    document.getElementById('modal-img').src=pr.photo||'';
+    document.getElementById('modal-desc-text').textContent=pr.desc||'Описание отсутствует';
+    const techItems=document.getElementById('modal-tech-items');
+    techItems.innerHTML='';
+    if(pr.tech){
+        const lines=pr.tech.split('.').filter(s=>s.trim());
+        lines.forEach(line=>{
+            techItems.innerHTML+='<div class="t-tech-item"><span class="t-tech-label">•</span><span class="t-tech-value">'+line.trim()+'</span></div>';
+        });
+    }
+    let html='';
+    if(pr.colors && pr.colors.length>0 && pr.selectorLabel){
+        html+='<select id="modal-gloss" onchange="updateModal()">';
+        pr.colors.forEach(c=>html+='<option value="'+c+'">'+c+'</option>');
+        html+='</select>';
+    }
+    html+='<select id="modal-size" onchange="updateModal()">';
+    pr.sizes.forEach((s,i)=>html+='<option value="'+i+'">'+s.volume+' ('+s.fill+')</option>');
+    html+='</select>';
+    document.getElementById('modal-selectors').innerHTML=html;
+    updateModal();
+    modal.classList.add('active');
+    document.body.style.overflow='hidden';
+}
+function closeProductModal(){document.getElementById('t-product-modal').classList.remove('active');document.body.style.overflow=''}
+function updateModal(){
+    if(!currentModalCat || currentModalIdx===null)return;
+    const pr=PRODUCTS_DATA[currentModalCat][currentModalIdx];
+    const glossSelect=document.getElementById('modal-gloss');
+    const sizeSelect=document.getElementById('modal-size');
+    const selectedGloss=glossSelect?glossSelect.value:'';
+    const sizeIndex=sizeSelect?parseInt(sizeSelect.value):0;
+    const sizeItem=pr.sizes[sizeIndex]||pr.sizes[0];
+    let foundOpt=null;
+    if(selectedGloss && pr.colors){
+        for(let opt of sizeItem.options){
+            if(opt.color===selectedGloss){foundOpt=opt;break}
+        }
+    }
+    if(!foundOpt)foundOpt=sizeItem.options[0];
+    const stock=foundOpt.stock||'Много';
+    let stockClass='in-stock',stockText='✅ В наличии';
+    if(stock==='Под заказ'){stockClass='on-order';stockText='⏳ Под заказ'}
+    else if(stock==='Мало'){stockClass='low-stock';stockText='⚠️ Мало'}
+    document.getElementById('modal-sku').textContent='Артикул: '+foundOpt.sku;
+    document.getElementById('modal-price').innerHTML=foundOpt.price.toLocaleString()+' <span class="t-currency">₽</span>';
+    document.getElementById('modal-price-large').innerHTML=foundOpt.price.toLocaleString()+' <span class="t-currency">₽</span>';
+    const stockEl=document.getElementById('modal-stock');
+    stockEl.textContent=stockText;stockEl.className='t-modal-stock '+stockClass;
+    const buyBtn=document.getElementById('modal-buy-btn');
+    if(stock==='Под заказ'){buyBtn.className='t-btn-buy on-order';buyBtn.textContent='⏳ Под заказ';buyBtn.disabled=true}
+    else{buyBtn.className='t-btn-buy';buyBtn.textContent='🛒 В корзину';buyBtn.disabled=false}
+}
+function buyFromModal(){
+    if(!currentModalCat || currentModalIdx===null)return;
+    const pr=PRODUCTS_DATA[currentModalCat][currentModalIdx];
+    const glossSelect=document.getElementById('modal-gloss');
+    const sizeSelect=document.getElementById('modal-size');
+    const selectedGloss=glossSelect?glossSelect.value:'';
+    const sizeIndex=sizeSelect?parseInt(sizeSelect.value):0;
+    const sizeItem=pr.sizes[sizeIndex]||pr.sizes[0];
+    let foundOpt=null;
+    if(selectedGloss && pr.colors){
+        for(let opt of sizeItem.options){
+            if(opt.color===selectedGloss){foundOpt=opt;break}
+        }
+    }
+    if(!foundOpt)foundOpt=sizeItem.options[0];
+    if(foundOpt.stock==='Под заказ'){alert('⏳ Этот товар доступен только под заказ.');return}
+    addToCart({brand:pr.brand||'SYMPHONY',name:pr.name,sku:foundOpt.sku,price:foundOpt.price,color:foundOpt.color||'',gloss:foundOpt.gloss||'',volume:sizeItem.volume||'',fill:sizeItem.fill||'',photo:pr.photo||''});
+    closeProductModal();
+}
+function openImageModal(src){const modal=document.getElementById('t-image-modal');const img=document.getElementById('t-image-modal-img');if(modal&&img&&src){img.src=src;modal.classList.add('active');document.body.style.overflow='hidden'}}
+function closeImageModal(){const modal=document.getElementById('t-image-modal');if(modal){modal.classList.remove('active');document.body.style.overflow=''}}
+
+// ПРОФИЛЬ
+function tProfileLoad(){try{const data=localStorage.getItem('t_profile_data');if(data){const parsed=JSON.parse(data);if(parsed&&parsed.email)return parsed}}catch(e){}return null}
+function tProfileSave(data){localStorage.setItem('t_profile_data',JSON.stringify(data))}
+function tProfileLogin(){
+    const email=document.getElementById('t-profile-email').value.trim();
+    const password=document.getElementById('t-profile-password').value.trim();
+    const message=document.getElementById('t-profile-message');
+    if(!email||!password){message.textContent='⚠️ Заполните email и пароль';message.style.cssText='display:block;color:#e74c3c;font-size:11px;';return}
+    const saved=tProfileLoad();
+    if(!saved||saved.email!==email||saved.password!==password){message.textContent='❌ Неверный email или пароль';message.style.cssText='display:block;color:#e74c3c;font-size:11px;';return}
+    tProfileShowDashboard(saved);message.style.display='none';
+}
+function tProfileRegister(){
+    const email=document.getElementById('t-profile-email').value.trim();
+    const password=document.getElementById('t-profile-password').value.trim();
+    const message=document.getElementById('t-profile-message');
+    if(!email||!password){message.textContent='⚠️ Заполните email и пароль';message.style.cssText='display:block;color:#e74c3c;font-size:11px;';return}
+    if(password.length<6){message.textContent='⚠️ Пароль должен быть не менее 6 символов';message.style.cssText='display:block;color:#e74c3c;font-size:11px;';return}
+    const userData={email:email,password:password,name:email.split('@')[0],registered:new Date().toISOString(),orders:[]};
+    tProfileSave(userData);tProfileShowDashboard(userData);message.textContent='✅ Регистрация успешна!';message.style.cssText='display:block;color:#3d7a4a;font-size:11px;';
+}
+function tProfileLogout(){localStorage.removeItem('t_profile_data');document.getElementById('t-profile-login').style.display='block';document.getElementById('t-profile-dashboard').style.display='none';document.getElementById('t-profile-email').value='';document.getElementById('t-profile-password').value='';}
+function tProfileShowDashboard(data){
+    document.getElementById('t-profile-login').style.display='none';
+    document.getElementById('t-profile-dashboard').style.display='block';
+    document.getElementById('t-profile-name').textContent=data.name||'Пользователь';
+    document.getElementById('t-profile-email-display').textContent=data.email;
+    const ordersContainer=document.getElementById('t-profile-orders');
+    if(data.orders&&data.orders.length>0){let html='';data.orders.forEach((order,i)=>{html+=`<div style="padding:4px 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:11px;"><strong>Заказ #${i+1}</strong> — ${order.date||'—'} <span style="color:#3d7a4a;">${order.total||0} ₽</span><span style="font-size:10px;color:rgba(255,255,255,0.3);">${order.status||'В обработке'}</span></div>`});ordersContainer.innerHTML=html}else{ordersContainer.innerHTML='<div style="padding:4px 0;color:rgba(255,255,255,0.4);font-size:11px;">У вас пока нет заказов.</div>'}}
+document.addEventListener('DOMContentLoaded',function(){const saved=tProfileLoad();if(saved&&saved.email)tProfileShowDashboard(saved)});
+
+// ПОИСК
+const tSearchAllProducts=[];
+async function tSearchLoadAllProducts(){
+    if(tSearchAllProducts.length>0)return tSearchAllProducts;
+    for(const cat of Object.keys(PRODUCTS_DATA)){
+        const items=PRODUCTS_DATA[cat]||[];
+        items.forEach(item=>{
+            const firstSize=item.sizes&&item.sizes[0];
+            const firstOpt=firstSize&&firstSize.options&&firstSize.options[0];
+            if(firstOpt){
+                tSearchAllProducts.push({category:cat,brand:item.brand||'SYMPHONY',name:item.name,sku:firstOpt.sku,photo:item.photo||'',stock:firstOpt.stock||'Много',url:'#'+cat});
+            }
+        });
+    }
+    return tSearchAllProducts;
+}
+function tSearchProducts(query){
+    if(!query||query.length<2)return[];
+    const q=query.toLowerCase().trim();
+    return tSearchAllProducts.filter(item=>(item.name&&item.name.toLowerCase().includes(q))||(item.brand&&item.brand.toLowerCase().includes(q))||(item.sku&&item.sku.toLowerCase().includes(q))).slice(0,15);
+}
+function tSearchHeaderRenderResults(results){
+    const container=document.getElementById('t-search-header-results');
+    if(!container)return;
+    if(results.length===0){container.innerHTML='<div style="padding:20px;text-align:center;color:rgba(255,255,255,0.5);font-size:13px;">😕 Ничего не найдено</div>';container.style.display='block';return}
+    let html='';
+    results.forEach(item=>{
+        html+=`<a class="t-search-item" href="${item.url}" onclick="event.preventDefault(); tSearchHeaderGoToProduct('${item.category}','${item.sku}')" style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.05);cursor:pointer;transition:background .2s;text-decoration:none;color:rgba(255,255,255,0.9);">
+            <img src="${item.photo}" alt="${item.name}" style="width:36px;height:36px;object-fit:contain;border-radius:6px;background:rgba(255,255,255,0.05);flex-shrink:0;" onerror="this.style.display='none'">
+            <div style="flex:1;min-width:0;"><div style="font-weight:600;font-size:12px;">${item.brand} ${item.name}</div><div style="font-size:10px;color:rgba(255,255,255,0.4);">Артикул: ${item.sku}</div></div>
+        </a>`;
+    });
+    container.innerHTML=html;container.style.display='block';
+}
+let tSearchDebounceTimer=null;
+function tSearchHeaderHandleInput(){
+    const input=document.getElementById('t-search-header-input');
+    const container=document.getElementById('t-search-header-results');
+    if(!input||!container)return;
+    clearTimeout(tSearchDebounceTimer);
+    const query=input.value;
+    if(query.length<2){container.style.display='none';return}
+    tSearchDebounceTimer=setTimeout(async ()=>{
+        await tSearchLoadAllProducts();
+        const results=tSearchProducts(query);
+        tSearchHeaderRenderResults(results);
+    },300);
+}
+function tSearchHeaderGoToProduct(category,sku){
+    document.getElementById('t-search-header-results').style.display='none';
+    document.getElementById('t-search-header-input').value='';
+    const products=tSearchAllProducts.filter(p=>p.category===category&&p.sku===sku);
+    if(products.length>0){
+        const catItems=PRODUCTS_DATA[category]||[];
+        const index=catItems.findIndex(p=>{
+            const first=p.sizes&&p.sizes[0]&&p.sizes[0].options&&p.sizes[0].options[0];
+            return first&&first.sku===sku;
+        });
+        if(index!==-1){openProductModal(category,index);return}
+    }
+    window.location.hash='section-'+category;
+}
+document.addEventListener('click',function(e){const container=document.getElementById('t-search-header-container');const results=document.getElementById('t-search-header-results');if(container&&results&&!container.contains(e.target)){results.style.display='none'}});
+document.addEventListener('DOMContentLoaded',function(){const input=document.getElementById('t-search-header-input');if(input){input.addEventListener('input',tSearchHeaderHandleInput);input.addEventListener('keydown',function(e){if(e.key==='Enter'){const results=document.getElementById('t-search-header-results');const firstItem=results?results.querySelector('.t-search-item'):null;if(firstItem)firstItem.click()}})}});
+
+// ============================================================
+// ЗАПУСК
+// ============================================================
+document.addEventListener('DOMContentLoaded',function(){
+    loadCart();
+    const hash=window.location.hash;
+    let startPage='home';
+    if(hash.startsWith('#section-')){
+        const page=hash.replace('#section-','');
+        if(document.getElementById('page-'+page)) startPage=page;
+    }
+    showPage(startPage);
+    console.log('✅ Каталог загружен! Раздел "Лаки" содержит '+PRODUCTS_DATA.laki.length+' товаров.');
+});
+</script>
+</body>
+</html>
