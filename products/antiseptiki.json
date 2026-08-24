@@ -1,240 +1,62 @@
 <style>
-.t-products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-.t-product-card {
-  background: #fff;
-  border-radius: 14px;
-  padding: 16px 18px 18px;
-  border: 1px solid #eaedf2;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  transition: transform .25s, box-shadow .25s;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.t-product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-.t-product-image {
-  width: 100%;
-  height: 160px;
-  overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  background: #f8faff;
-  border: 1px solid #eaedf2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.t-product-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.t-product-brand {
-  font-size: 16px;
-  font-weight: 700;
-  color: #1a2a3a;
-}
-.t-product-name {
-  font-size: 14px;
-  font-weight: 600;
-  color: #2c3e50;
-  line-height: 1.3;
-  margin: 4px 0;
-}
-.t-product-sku {
-  font-size: 11px;
-  color: #9aaabb;
-}
-.t-product-stock {
-  font-size: 11px;
-  font-weight: 500;
-  padding: 2px 10px;
-  border-radius: 20px;
-  display: inline-block;
-  margin: 4px 0;
-}
-.t-product-stock.in-stock {
-  color: #3d7a4a;
-  background: rgba(61,122,74,0.12);
-}
-.t-product-stock.low-stock {
-  color: #d4880f;
-  background: rgba(212,136,15,0.12);
-}
-.t-product-stock.on-order {
-  color: #e74c3c;
-  background: rgba(231,76,60,0.12);
-}
-.t-product-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 8px;
-  border-top: 1px solid #eaedf2;
-  margin-top: auto;
-}
-.t-product-price {
-  font-size: 18px;
-  font-weight: 700;
-  color: #1a2a3a;
-}
-.t-product-price .t-currency {
-  font-size: 13px;
-  font-weight: 400;
-  color: #6a7a8a;
-}
-.t-btn-buy {
-  background: #d0d5dd;
-  color: #1a2a3a;
-  border: none;
-  border-radius: 6px;
-  padding: 6px 16px;
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background .2s;
-}
-.t-btn-buy:hover {
-  background: #b8bfc9;
-}
-.t-btn-buy.on-order {
-  background: #d0d5dd;
-  color: #6a7a8a;
-  cursor: default;
-  pointer-events: none;
-  opacity: 0.6;
-}
-.t-selectors {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  margin: 4px 0;
-}
-.t-select-group {
-  flex: 1;
-  min-width: 60px;
-}
-.t-select-group label {
-  display: block;
-  font-size: 9px;
-  font-weight: 600;
-  color: #6a7a8a;
-  text-transform: uppercase;
-}
-.t-select-group select {
-  width: 100%;
-  padding: 2px 4px;
-  border: 2px solid #dce3ec;
-  border-radius: 5px;
-  background: #f8faff;
-  font-size: 11px;
-  font-family: inherit;
-  cursor: pointer;
-}
-.t-specs-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 4px 0;
-  font-size: 11px;
-}
-.t-specs-table td {
-  padding: 2px 6px;
-  border-bottom: 1px solid #f0f2f5;
-}
-.t-specs-table .t-spec-label {
-  font-weight: 600;
-  color: #1a2a3a;
-  width: 38%;
-  background: rgba(248,250,255,0.9);
-}
-.t-specs-table .t-spec-value {
-  color: #3d5166;
-}
-.t-btn-detail {
-  background: rgba(232,236,242,0.9);
-  color: #1a2a3a;
-  border: none;
-  border-radius: 6px;
-  padding: 4px 10px;
-  font-size: 11px;
-  font-weight: 600;
-  cursor: pointer;
-  width: 100%;
-  margin-top: 4px;
-}
-.t-btn-detail:hover {
-  background: #d0d6de;
-}
-.t-full-description {
-  font-size: 12px;
-  color: #4a5a6a;
-  line-height: 1.4;
-  margin: 4px 0;
-  padding: 8px 12px;
-  background: rgba(248,250,255,0.95);
-  border-radius: 6px;
-  border-left: 3px solid #999;
-  display: none;
-}
-.t-full-description.open {
-  display: block;
-}
-.t-loading {
-  text-align: center;
-  padding: 40px;
-  color: #6a7a8a;
-  grid-column: 1 / -1;
-}
-.t-error {
-  text-align: center;
-  padding: 40px;
-  color: #e74c3c;
-  grid-column: 1 / -1;
-}
+.t-products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;max-width:1200px;margin:0 auto;padding:20px 0}
+.t-product-card{background:#fff;border-radius:14px;padding:16px 18px 18px;border:1px solid #eaedf2;box-shadow:0 2px 8px rgba(0,0,0,0.06);display:flex;flex-direction:column;height:100%}
+.t-product-card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,0.1)}
+.t-product-image{width:100%;height:160px;overflow:hidden;border-radius:10px;margin-bottom:10px;background:#f8faff;border:1px solid #eaedf2;display:flex;align-items:center;justify-content:center}
+.t-product-image img{width:100%;height:100%;object-fit:contain}
+.t-product-brand{font-size:16px;font-weight:700;color:#1a2a3a}
+.t-product-name{font-size:14px;font-weight:600;color:#2c3e50;line-height:1.3;margin:4px 0}
+.t-product-sku{font-size:11px;color:#9aaabb}
+.t-product-stock{font-size:11px;font-weight:500;padding:2px 10px;border-radius:20px;display:inline-block;margin:4px 0}
+.t-product-stock.in-stock{color:#3d7a4a;background:rgba(61,122,74,0.12)}
+.t-product-stock.low-stock{color:#d4880f;background:rgba(212,136,15,0.12)}
+.t-product-stock.on-order{color:#e74c3c;background:rgba(231,76,60,0.12)}
+.t-product-footer{display:flex;align-items:center;justify-content:space-between;padding-top:8px;border-top:1px solid #eaedf2;margin-top:auto}
+.t-product-price{font-size:18px;font-weight:700;color:#1a2a3a}
+.t-product-price .t-currency{font-size:13px;font-weight:400;color:#6a7a8a}
+.t-btn-buy{background:#d0d5dd;color:#1a2a3a;border:none;border-radius:6px;padding:6px 16px;font-size:12px;font-weight:600;cursor:pointer}
+.t-btn-buy:hover{background:#b8bfc9}
+.t-btn-buy.on-order{background:#d0d5dd;color:#6a7a8a;cursor:default;pointer-events:none;opacity:0.6}
+.t-selectors{display:flex;flex-wrap:wrap;gap:4px;margin:4px 0}
+.t-select-group{flex:1;min-width:60px}
+.t-select-group label{display:block;font-size:9px;font-weight:600;color:#6a7a8a;text-transform:uppercase}
+.t-select-group select{width:100%;padding:2px 4px;border:2px solid #dce3ec;border-radius:5px;background:#f8faff;font-size:11px;font-family:inherit;cursor:pointer}
+.t-specs-table{width:100%;border-collapse:collapse;margin:4px 0;font-size:11px}
+.t-specs-table td{padding:2px 6px;border-bottom:1px solid #f0f2f5}
+.t-specs-table .t-spec-label{font-weight:600;color:#1a2a3a;width:38%;background:rgba(248,250,255,0.9)}
+.t-specs-table .t-spec-value{color:#3d5166}
+.t-btn-detail{background:rgba(232,236,242,0.9);color:#1a2a3a;border:none;border-radius:6px;padding:4px 10px;font-size:11px;font-weight:600;cursor:pointer;width:100%;margin-top:4px}
+.t-btn-detail:hover{background:#d0d6de}
+.t-full-description{font-size:12px;color:#4a5a6a;line-height:1.4;margin:4px 0;padding:8px 12px;background:rgba(248,250,255,0.95);border-radius:6px;border-left:3px solid #999;display:none}
+.t-full-description.open{display:block}
+.t-loading{text-align:center;padding:40px;color:#6a7a8a;grid-column:1/-1}
+.t-error{text-align:center;padding:40px;color:#e74c3c;grid-column:1/-1}
 </style>
-
-<div class="t-products-grid" id="antiseptiki-grid">
-  <div class="t-loading">⏳ Загрузка товаров...</div>
-</div>
-
+<div class="t-products-grid" id="antiseptiki-grid"><div class="t-loading">⏳ Загрузка товаров...</div></div>
 <script>
-const GITHUB_URL = 'https://raw.githubusercontent.com/gerasimov197789-gif/colormsk-products/main/products/antiseptik.json';
-
+var GITHUB_URL = 'https://raw.githubusercontent.com/gerasimov197789-gif/colormsk-products/main/products/antiseptik.json';
 async function loadProducts() {
-  const container = document.getElementById('antiseptiki-grid');
+  var container = document.getElementById('antiseptiki-grid');
   try {
-    const response = await fetch(GITHUB_URL);
+    var response = await fetch(GITHUB_URL);
     if (!response.ok) throw new Error('Ошибка загрузки: ' + response.status);
-    const products = await response.json();
+    var products = await response.json();
     renderProducts(products, container);
   } catch (error) {
     container.innerHTML = '<div class="t-error">❌ Не удалось загрузить товары: ' + error.message + '</div>';
-    console.error('Ошибка загрузки:', error);
   }
 }
-
 function renderProducts(products, container) {
   if (!products || products.length === 0) {
     container.innerHTML = '<div class="t-loading">😕 Товары не найдены</div>';
     return;
   }
-
-  let html = '';
-  products.forEach(function(product, index) {
+  var html = '';
+  for (var index = 0; index < products.length; index++) {
+    var product = products[index];
     var hasColors = product.colors && product.colors.length > 0;
     var hasSizes = product.sizes && product.sizes.length > 0;
-    if (!hasSizes) return;
-
+    if (!hasSizes) continue;
     var firstSize = product.sizes[0];
     var firstOpt = firstSize.options[0];
     var stock = firstOpt.stock || 'Много';
@@ -242,7 +64,6 @@ function renderProducts(products, container) {
     var stockText = '✅ В наличии';
     if (stock === 'Под заказ') { stockClass = 'on-order'; stockText = '⏳ Под заказ'; }
     else if (stock === 'Мало') { stockClass = 'low-stock'; stockText = '⚠️ Мало'; }
-
     html += '<div class="t-product-card" data-index="' + index + '">';
     html += '<div class="t-product-image"><img src="' + (product.photo || '') + '" alt="' + product.name + '" loading="lazy" onerror="this.style.display=\'none\'"></div>';
     html += '<div class="t-product-brand">' + (product.brand || 'SYMPHONY') + '</div>';
@@ -252,15 +73,15 @@ function renderProducts(products, container) {
     html += '<div class="t-selectors">';
     if (hasColors) {
       html += '<div class="t-select-group"><label>🎨 Цвет</label><select class="t-select-color" data-index="' + index + '">';
-      product.colors.forEach(function(c) {
-        html += '<option value="' + c + '">' + c + '</option>';
-      });
+      for (var c = 0; c < product.colors.length; c++) {
+        html += '<option value="' + product.colors[c] + '">' + product.colors[c] + '</option>';
+      }
       html += '</select></div>';
     }
     html += '<div class="t-select-group"><label>📦 Объём</label><select class="t-select-size" data-index="' + index + '">';
-    product.sizes.forEach(function(s, i) {
-      html += '<option value="' + i + '">' + s.volume + '</option>';
-    });
+    for (var s = 0; s < product.sizes.length; s++) {
+      html += '<option value="' + s + '">' + product.sizes[s].volume + '</option>';
+    }
     html += '</select></div>';
     html += '</div>';
     html += '<table class="t-specs-table">';
@@ -278,29 +99,25 @@ function renderProducts(products, container) {
     html += '<button class="t-btn-buy ' + (stock === 'Под заказ' ? 'on-order' : '') + '" data-index="' + index + '" ' + (stock === 'Под заказ' ? 'disabled' : '') + '>' + (stock === 'Под заказ' ? '⏳ Под заказ' : '🛒 В корзину') + '</button>';
     html += '</div>';
     html += '</div>';
-  });
-
+  }
   container.innerHTML = html;
-
-  // Обработчики для выбора объёма
-  document.querySelectorAll('.t-select-size').forEach(function(sel) {
-    sel.addEventListener('change', function() {
+  var selects = document.querySelectorAll('.t-select-size');
+  for (var i = 0; i < selects.length; i++) {
+    selects[i].addEventListener('change', function() {
       var idx = parseInt(this.dataset.index);
       updateCard(idx);
     });
-  });
-
-  // Обработчики для выбора цвета
-  document.querySelectorAll('.t-select-color').forEach(function(sel) {
-    sel.addEventListener('change', function() {
+  }
+  var colorSelects = document.querySelectorAll('.t-select-color');
+  for (var j = 0; j < colorSelects.length; j++) {
+    colorSelects[j].addEventListener('change', function() {
       var idx = parseInt(this.dataset.index);
       updateCard(idx);
     });
-  });
-
-  // Обработчики для кнопки "Подробнее"
-  document.querySelectorAll('.t-btn-detail').forEach(function(btn) {
-    btn.addEventListener('click', function() {
+  }
+  var detailBtns = document.querySelectorAll('.t-btn-detail');
+  for (var k = 0; k < detailBtns.length; k++) {
+    detailBtns[k].addEventListener('click', function() {
       var idx = parseInt(this.dataset.index);
       var fd = document.getElementById('full-' + idx);
       if (fd) {
@@ -308,11 +125,10 @@ function renderProducts(products, container) {
         this.textContent = fd.classList.contains('open') ? '📖 Скрыть' : '📖 Подробнее';
       }
     });
-  });
-
-  // Обработчики для кнопки "В корзину"
-  document.querySelectorAll('.t-btn-buy:not(.on-order)').forEach(function(btn) {
-    btn.addEventListener('click', function() {
+  }
+  var buyBtns = document.querySelectorAll('.t-btn-buy:not(.on-order)');
+  for (var m = 0; m < buyBtns.length; m++) {
+    buyBtns[m].addEventListener('click', function() {
       var idx = parseInt(this.dataset.index);
       var productsData = window._productsData || [];
       var pr = productsData[idx];
@@ -324,58 +140,48 @@ function renderProducts(products, container) {
       var selectedColor = colorSelect ? colorSelect.value : null;
       var opt = sizeItem.options[0];
       if (selectedColor && pr.colors) {
-        var found = sizeItem.options.find(function(o) { return o.color === selectedColor; });
-        if (found) opt = found;
+        for (var o = 0; o < sizeItem.options.length; o++) {
+          if (sizeItem.options[o].color === selectedColor) { opt = sizeItem.options[o]; break; }
+        }
       }
       if (opt.stock === 'Под заказ') { alert('⏳ Этот товар доступен только под заказ.'); return; }
       alert('✅ ' + (pr.brand || 'SYMPHONY') + ' ' + pr.name + ' (' + sizeItem.volume + ') добавлен в корзину!\nАртикул: ' + opt.sku + '\nЦена: ' + opt.price + ' ₽');
     });
-  });
-
+  }
   window._productsData = products;
 }
-
 function updateCard(idx) {
   var products = window._productsData || [];
   var pr = products[idx];
   if (!pr) return;
-  
   var card = document.querySelector('.t-product-card[data-index="' + idx + '"]');
   if (!card) return;
-  
   var sizeSelect = card.querySelector('.t-select-size');
   var colorSelect = card.querySelector('.t-select-color');
   var sizeIndex = sizeSelect ? parseInt(sizeSelect.value) : 0;
   var sizeItem = pr.sizes[sizeIndex] || pr.sizes[0];
   var selectedColor = colorSelect ? colorSelect.value : null;
-  
   var opt = sizeItem.options[0];
   if (selectedColor && pr.colors) {
-    var found = sizeItem.options.find(function(o) { return o.color === selectedColor; });
-    if (found) opt = found;
+    for (var o = 0; o < sizeItem.options.length; o++) {
+      if (sizeItem.options[o].color === selectedColor) { opt = sizeItem.options[o]; break; }
+    }
   }
-  
   var stock = opt.stock || 'Много';
   var stockClass = 'in-stock';
   var stockText = '✅ В наличии';
   if (stock === 'Под заказ') { stockClass = 'on-order'; stockText = '⏳ Под заказ'; }
   else if (stock === 'Мало') { stockClass = 'low-stock'; stockText = '⚠️ Мало'; }
-  
   var skuEl = document.getElementById('sku-' + idx);
   if (skuEl) skuEl.textContent = 'Артикул: ' + opt.sku;
-  
   var priceEl = document.getElementById('price-' + idx);
   if (priceEl) priceEl.innerHTML = opt.price.toLocaleString() + ' <span class="t-currency">₽</span>';
-  
   var stockEl = document.getElementById('stock-' + idx);
   if (stockEl) { stockEl.textContent = stockText; stockEl.className = 't-product-stock ' + stockClass; }
-  
   var volumeEl = document.getElementById('volume-' + idx);
   if (volumeEl) volumeEl.textContent = sizeItem.volume;
-  
   var statusEl = document.getElementById('status-' + idx);
   if (statusEl) statusEl.textContent = stockText;
-  
   var buyBtn = card.querySelector('.t-btn-buy');
   if (buyBtn) {
     if (stock === 'Под заказ') {
@@ -389,6 +195,5 @@ function updateCard(idx) {
     }
   }
 }
-
 document.addEventListener('DOMContentLoaded', loadProducts);
 </script>
