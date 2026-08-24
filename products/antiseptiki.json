@@ -1,37 +1,206 @@
 <style>
-.t-products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;max-width:1200px;margin:0 auto;padding:20px 0}
-.t-product-card{background:#fff;border-radius:14px;padding:16px 18px 18px;border:1px solid #eaedf2;box-shadow:0 2px 8px rgba(0,0,0,0.06);transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column;height:100%}
-.t-product-card:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,0.1)}
-.t-product-image{width:100%;height:160px;overflow:hidden;border-radius:10px;margin-bottom:10px;background:#f8faff;border:1px solid #eaedf2;display:flex;align-items:center;justify-content:center}
-.t-product-image img{width:100%;height:100%;object-fit:contain;padding:10px}
-.t-product-brand{font-size:16px;font-weight:700;color:#1a2a3a}
-.t-product-name{font-size:14px;font-weight:600;color:#2c3e50;line-height:1.3;margin:4px 0}
-.t-product-sku{font-size:11px;color:#9aaabb}
-.t-product-stock{font-size:11px;font-weight:500;padding:2px 10px;border-radius:20px;display:inline-block;margin:4px 0}
-.t-product-stock.in-stock{color:#3d7a4a;background:rgba(61,122,74,0.12)}
-.t-product-stock.low-stock{color:#d4880f;background:rgba(212,136,15,0.12)}
-.t-product-stock.on-order{color:#e74c3c;background:rgba(231,76,60,0.12)}
-.t-product-footer{display:flex;align-items:center;justify-content:space-between;padding-top:8px;border-top:1px solid #eaedf2;margin-top:auto}
-.t-product-price{font-size:18px;font-weight:700;color:#1a2a3a}
-.t-product-price .t-currency{font-size:13px;font-weight:400;color:#6a7a8a}
-.t-btn-buy{background:#d0d5dd;color:#1a2a3a;border:none;border-radius:6px;padding:6px 16px;font-size:12px;font-weight:600;cursor:pointer;transition:background .2s}
-.t-btn-buy:hover{background:#b8bfc9}
-.t-btn-buy.on-order{background:#d0d5dd;color:#6a7a8a;cursor:default;pointer-events:none;opacity:0.6}
-.t-selectors{display:flex;flex-wrap:wrap;gap:4px;margin:4px 0}
-.t-select-group{flex:1;min-width:60px}
-.t-select-group label{display:block;font-size:9px;font-weight:600;color:#6a7a8a;text-transform:uppercase;letter-spacing:.3px}
-.t-select-group select{width:100%;padding:2px 4px;border:2px solid #dce3ec;border-radius:5px;background:#f8faff;font-size:11px;font-family:inherit;cursor:pointer}
-.t-specs-table{width:100%;border-collapse:collapse;margin:4px 0;font-size:11px}
-.t-specs-table td{padding:2px 6px;border-bottom:1px solid #f0f2f5}
-.t-specs-table tr:last-child td{border-bottom:none}
-.t-specs-table .t-spec-label{font-weight:600;color:#1a2a3a;width:38%;background:rgba(248,250,255,0.9)}
-.t-specs-table .t-spec-value{color:#3d5166;background:rgba(255,255,255,0.9)}
-.t-btn-detail{background:rgba(232,236,242,0.9);color:#1a2a3a;border:none;border-radius:6px;padding:4px 10px;font-size:11px;font-weight:600;cursor:pointer;width:100%;margin-top:4px;transition:background .2s}
-.t-btn-detail:hover{background:#d0d6de}
-.t-full-description{font-size:12px;color:#4a5a6a;line-height:1.4;margin:4px 0;padding:8px 12px;background:rgba(248,250,255,0.95);border-radius:6px;border-left:3px solid #999;display:none}
-.t-full-description.open{display:block}
-.t-loading{text-align:center;padding:40px;color:#6a7a8a;grid-column:1/-1}
-.t-error{text-align:center;padding:40px;color:#e74c3c;grid-column:1/-1}
+.t-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.t-product-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px 18px 18px;
+  border: 1px solid #eaedf2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform .25s, box-shadow .25s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.t-product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.t-product-image {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: #f8faff;
+  border: 1px solid #eaedf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.t-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.t-product-brand {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a2a3a;
+}
+.t-product-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c3e50;
+  line-height: 1.3;
+  margin: 4px 0;
+}
+.t-product-sku {
+  font-size: 11px;
+  color: #9aaabb;
+}
+.t-product-stock {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 4px 0;
+}
+.t-product-stock.in-stock {
+  color: #3d7a4a;
+  background: rgba(61,122,74,0.12);
+}
+.t-product-stock.low-stock {
+  color: #d4880f;
+  background: rgba(212,136,15,0.12);
+}
+.t-product-stock.on-order {
+  color: #e74c3c;
+  background: rgba(231,76,60,0.12);
+}
+.t-product-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  border-top: 1px solid #eaedf2;
+  margin-top: auto;
+}
+.t-product-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a2a3a;
+}
+.t-product-price .t-currency {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6a7a8a;
+}
+.t-btn-buy {
+  background: #d0d5dd;
+  color: #1a2a3a;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s;
+}
+.t-btn-buy:hover {
+  background: #b8bfc9;
+}
+.t-btn-buy.on-order {
+  background: #d0d5dd;
+  color: #6a7a8a;
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.6;
+}
+.t-selectors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 4px 0;
+}
+.t-select-group {
+  flex: 1;
+  min-width: 60px;
+}
+.t-select-group label {
+  display: block;
+  font-size: 9px;
+  font-weight: 600;
+  color: #6a7a8a;
+  text-transform: uppercase;
+}
+.t-select-group select {
+  width: 100%;
+  padding: 2px 4px;
+  border: 2px solid #dce3ec;
+  border-radius: 5px;
+  background: #f8faff;
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.t-specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 4px 0;
+  font-size: 11px;
+}
+.t-specs-table td {
+  padding: 2px 6px;
+  border-bottom: 1px solid #f0f2f5;
+}
+.t-specs-table .t-spec-label {
+  font-weight: 600;
+  color: #1a2a3a;
+  width: 38%;
+  background: rgba(248,250,255,0.9);
+}
+.t-specs-table .t-spec-value {
+  color: #3d5166;
+}
+.t-btn-detail {
+  background: rgba(232,236,242,0.9);
+  color: #1a2a3a;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 4px;
+}
+.t-btn-detail:hover {
+  background: #d0d6de;
+}
+.t-full-description {
+  font-size: 12px;
+  color: #4a5a6a;
+  line-height: 1.4;
+  margin: 4px 0;
+  padding: 8px 12px;
+  background: rgba(248,250,255,0.95);
+  border-radius: 6px;
+  border-left: 3px solid #999;
+  display: none;
+}
+.t-full-description.open {
+  display: block;
+}
+.t-loading {
+  text-align: center;
+  padding: 40px;
+  color: #6a7a8a;
+  grid-column: 1 / -1;
+}
+.t-error {
+  text-align: center;
+  padding: 40px;
+  color: #e74c3c;
+  grid-column: 1 / -1;
+}
 </style>
 
 <div class="t-products-grid" id="antiseptiki-grid">
@@ -39,9 +208,6 @@
 </div>
 
 <script>
-// ============================================================
-// ЗАГРУЗКА ТОВАРОВ ИЗ GITHUB
-// ============================================================
 const GITHUB_URL = 'https://raw.githubusercontent.com/gerasimov197789-gif/colormsk-products/main/products/antiseptik.json';
 
 async function loadProducts() {
@@ -52,7 +218,7 @@ async function loadProducts() {
     const products = await response.json();
     renderProducts(products, container);
   } catch (error) {
-    container.innerHTML = `<div class="t-error">❌ Не удалось загрузить товары: ${error.message}</div>`;
+    container.innerHTML = '<div class="t-error">❌ Не удалось загрузить товары: ' + error.message + '</div>';
     console.error('Ошибка загрузки:', error);
   }
 }
@@ -64,71 +230,79 @@ function renderProducts(products, container) {
   }
 
   let html = '';
-  products.forEach((product, index) => {
-    const hasColors = product.colors && product.colors.length > 0;
-    const hasSizes = product.sizes && product.sizes.length > 0;
+  products.forEach(function(product, index) {
+    var hasColors = product.colors && product.colors.length > 0;
+    var hasSizes = product.sizes && product.sizes.length > 0;
     if (!hasSizes) return;
 
-    const firstSize = product.sizes[0];
-    const firstOpt = firstSize.options[0];
-    const stock = firstOpt.stock || 'Много';
-    let stockClass = 'in-stock';
-    let stockText = '✅ В наличии';
+    var firstSize = product.sizes[0];
+    var firstOpt = firstSize.options[0];
+    var stock = firstOpt.stock || 'Много';
+    var stockClass = 'in-stock';
+    var stockText = '✅ В наличии';
     if (stock === 'Под заказ') { stockClass = 'on-order'; stockText = '⏳ Под заказ'; }
     else if (stock === 'Мало') { stockClass = 'low-stock'; stockText = '⚠️ Мало'; }
 
-    html += `<div class="t-product-card" data-index="${index}">
-      <div class="t-product-image">
-        <img src="${product.photo || ''}" alt="${product.name}" loading="lazy" onerror="this.style.display='none'">
-      </div>
-      <div class="t-product-brand">${product.brand || 'SYMPHONY'}</div>
-      <div class="t-product-name">${product.name}</div>
-      <div class="t-product-sku" id="sku-${index}">Артикул: ${firstOpt.sku}</div>
-      <div class="t-product-stock ${stockClass}" id="stock-${index}">${stockText}</div>
-      <div class="t-selectors">
-        ${hasColors ? `<div class="t-select-group"><label>🎨 Цвет</label><select class="t-select-color" data-index="${index}">${product.colors.map(c => `<option value="${c}">${c}</option>`).join('')}</select></div>` : ''}
-        <div class="t-select-group"><label>📦 Объём</label><select class="t-select-size" data-index="${index}">${product.sizes.map((s, i) => `<option value="${i}">${s.volume}</option>`).join('')}</select></div>
-      </div>
-      <table class="t-specs-table">
-        <tr><td class="t-spec-label">Объём</td><td class="t-spec-value" id="volume-${index}">${firstSize.volume}</td></tr>
-        <tr><td class="t-spec-label">Бренд</td><td class="t-spec-value">${product.brand || 'SYMPHONY'}</td></tr>
-        <tr><td class="t-spec-label">Наличие</td><td class="t-spec-value" id="status-${index}">${stockText}</td></tr>
-      </table>
-      <button class="t-btn-detail" data-index="${index}">📖 Подробнее</button>
-      <div class="t-full-description" id="full-${index}">
-        <strong>📋 Описание:</strong><br>${product.desc || 'Описание отсутствует'}<br><br>
-        <strong>Характеристики:</strong><br>${product.tech || ''}
-      </div>
-      <div class="t-product-footer">
-        <div class="t-product-price" id="price-${index}">${firstOpt.price.toLocaleString()} <span class="t-currency">₽</span></div>
-        <button class="t-btn-buy ${stock === 'Под заказ' ? 'on-order' : ''}" data-index="${index}" ${stock === 'Под заказ' ? 'disabled' : ''}>${stock === 'Под заказ' ? '⏳ Под заказ' : '🛒 В корзину'}</button>
-      </div>
-    </div>`;
+    html += '<div class="t-product-card" data-index="' + index + '">';
+    html += '<div class="t-product-image"><img src="' + (product.photo || '') + '" alt="' + product.name + '" loading="lazy" onerror="this.style.display=\'none\'"></div>';
+    html += '<div class="t-product-brand">' + (product.brand || 'SYMPHONY') + '</div>';
+    html += '<div class="t-product-name">' + product.name + '</div>';
+    html += '<div class="t-product-sku" id="sku-' + index + '">Артикул: ' + firstOpt.sku + '</div>';
+    html += '<div class="t-product-stock ' + stockClass + '" id="stock-' + index + '">' + stockText + '</div>';
+    html += '<div class="t-selectors">';
+    if (hasColors) {
+      html += '<div class="t-select-group"><label>🎨 Цвет</label><select class="t-select-color" data-index="' + index + '">';
+      product.colors.forEach(function(c) {
+        html += '<option value="' + c + '">' + c + '</option>';
+      });
+      html += '</select></div>';
+    }
+    html += '<div class="t-select-group"><label>📦 Объём</label><select class="t-select-size" data-index="' + index + '">';
+    product.sizes.forEach(function(s, i) {
+      html += '<option value="' + i + '">' + s.volume + '</option>';
+    });
+    html += '</select></div>';
+    html += '</div>';
+    html += '<table class="t-specs-table">';
+    html += '<tr><td class="t-spec-label">Объём</td><td class="t-spec-value" id="volume-' + index + '">' + firstSize.volume + '</td></tr>';
+    html += '<tr><td class="t-spec-label">Бренд</td><td class="t-spec-value">' + (product.brand || 'SYMPHONY') + '</td></tr>';
+    html += '<tr><td class="t-spec-label">Наличие</td><td class="t-spec-value" id="status-' + index + '">' + stockText + '</td></tr>';
+    html += '</table>';
+    html += '<button class="t-btn-detail" data-index="' + index + '">📖 Подробнее</button>';
+    html += '<div class="t-full-description" id="full-' + index + '">';
+    html += '<strong>📋 Описание:</strong><br>' + (product.desc || 'Описание отсутствует') + '<br><br>';
+    html += '<strong>Характеристики:</strong><br>' + (product.tech || '');
+    html += '</div>';
+    html += '<div class="t-product-footer">';
+    html += '<div class="t-product-price" id="price-' + index + '">' + firstOpt.price.toLocaleString() + ' <span class="t-currency">₽</span></div>';
+    html += '<button class="t-btn-buy ' + (stock === 'Под заказ' ? 'on-order' : '') + '" data-index="' + index + '" ' + (stock === 'Под заказ' ? 'disabled' : '') + '>' + (stock === 'Под заказ' ? '⏳ Под заказ' : '🛒 В корзину') + '</button>';
+    html += '</div>';
+    html += '</div>';
   });
 
   container.innerHTML = html;
 
   // Обработчики для выбора объёма
-  document.querySelectorAll('.t-select-size').forEach(sel => {
+  document.querySelectorAll('.t-select-size').forEach(function(sel) {
     sel.addEventListener('change', function() {
-      const idx = parseInt(this.dataset.index);
+      var idx = parseInt(this.dataset.index);
       updateCard(idx);
     });
   });
 
   // Обработчики для выбора цвета
-  document.querySelectorAll('.t-select-color').forEach(sel => {
+  document.querySelectorAll('.t-select-color').forEach(function(sel) {
     sel.addEventListener('change', function() {
-      const idx = parseInt(this.dataset.index);
+      var idx = parseInt(this.dataset.index);
       updateCard(idx);
     });
   });
 
   // Обработчики для кнопки "Подробнее"
-  document.querySelectorAll('.t-btn-detail').forEach(btn => {
+  document.querySelectorAll('.t-btn-detail').forEach(function(btn) {
     btn.addEventListener('click', function() {
-      const idx = parseInt(this.dataset.index);
-      const fd = document.getElementById('full-' + idx);
+      var idx = parseInt(this.dataset.index);
+      var fd = document.getElementById('full-' + idx);
       if (fd) {
         fd.classList.toggle('open');
         this.textContent = fd.classList.contains('open') ? '📖 Скрыть' : '📖 Подробнее';
@@ -137,81 +311,72 @@ function renderProducts(products, container) {
   });
 
   // Обработчики для кнопки "В корзину"
-  document.querySelectorAll('.t-btn-buy:not(.on-order)').forEach(btn => {
+  document.querySelectorAll('.t-btn-buy:not(.on-order)').forEach(function(btn) {
     btn.addEventListener('click', function() {
-      const idx = parseInt(this.dataset.index);
-      const productsData = window._productsData || [];
-      const pr = productsData[idx];
+      var idx = parseInt(this.dataset.index);
+      var productsData = window._productsData || [];
+      var pr = productsData[idx];
       if (!pr) return;
-      const sizeSelect = document.querySelector(`.t-select-size[data-index="${idx}"]`);
-      const colorSelect = document.querySelector(`.t-select-color[data-index="${idx}"]`);
-      const sizeIndex = sizeSelect ? parseInt(sizeSelect.value) : 0;
-      const sizeItem = pr.sizes[sizeIndex] || pr.sizes[0];
-      const selectedColor = colorSelect ? colorSelect.value : null;
-      let opt = sizeItem.options[0];
+      var sizeSelect = document.querySelector('.t-select-size[data-index="' + idx + '"]');
+      var colorSelect = document.querySelector('.t-select-color[data-index="' + idx + '"]');
+      var sizeIndex = sizeSelect ? parseInt(sizeSelect.value) : 0;
+      var sizeItem = pr.sizes[sizeIndex] || pr.sizes[0];
+      var selectedColor = colorSelect ? colorSelect.value : null;
+      var opt = sizeItem.options[0];
       if (selectedColor && pr.colors) {
-        const found = sizeItem.options.find(o => o.color === selectedColor);
+        var found = sizeItem.options.find(function(o) { return o.color === selectedColor; });
         if (found) opt = found;
       }
       if (opt.stock === 'Под заказ') { alert('⏳ Этот товар доступен только под заказ.'); return; }
-      alert(`✅ ${pr.brand || 'SYMPHONY'} ${pr.name} (${sizeItem.volume}) добавлен в корзину!\nАртикул: ${opt.sku}\nЦена: ${opt.price} ₽`);
+      alert('✅ ' + (pr.brand || 'SYMPHONY') + ' ' + pr.name + ' (' + sizeItem.volume + ') добавлен в корзину!\nАртикул: ' + opt.sku + '\nЦена: ' + opt.price + ' ₽');
     });
   });
 
   window._productsData = products;
 }
 
-// ============================================================
-// ОБНОВЛЕНИЕ КАРТОЧКИ ПРИ СМЕНЕ ОБЪЁМА ИЛИ ЦВЕТА
-// ============================================================
 function updateCard(idx) {
-  const products = window._productsData || [];
-  const pr = products[idx];
+  var products = window._productsData || [];
+  var pr = products[idx];
   if (!pr) return;
   
-  const card = document.querySelector(`.t-product-card[data-index="${idx}"]`);
+  var card = document.querySelector('.t-product-card[data-index="' + idx + '"]');
   if (!card) return;
   
-  const sizeSelect = card.querySelector('.t-select-size');
-  const colorSelect = card.querySelector('.t-select-color');
-  const sizeIndex = sizeSelect ? parseInt(sizeSelect.value) : 0;
-  const sizeItem = pr.sizes[sizeIndex] || pr.sizes[0];
-  const selectedColor = colorSelect ? colorSelect.value : null;
+  var sizeSelect = card.querySelector('.t-select-size');
+  var colorSelect = card.querySelector('.t-select-color');
+  var sizeIndex = sizeSelect ? parseInt(sizeSelect.value) : 0;
+  var sizeItem = pr.sizes[sizeIndex] || pr.sizes[0];
+  var selectedColor = colorSelect ? colorSelect.value : null;
   
-  let opt = sizeItem.options[0];
+  var opt = sizeItem.options[0];
   if (selectedColor && pr.colors) {
-    const found = sizeItem.options.find(o => o.color === selectedColor);
+    var found = sizeItem.options.find(function(o) { return o.color === selectedColor; });
     if (found) opt = found;
   }
   
-  const stock = opt.stock || 'Много';
-  let stockClass = 'in-stock';
-  let stockText = '✅ В наличии';
+  var stock = opt.stock || 'Много';
+  var stockClass = 'in-stock';
+  var stockText = '✅ В наличии';
   if (stock === 'Под заказ') { stockClass = 'on-order'; stockText = '⏳ Под заказ'; }
   else if (stock === 'Мало') { stockClass = 'low-stock'; stockText = '⚠️ Мало'; }
   
-  // Обновляем артикул
-  const skuEl = document.getElementById('sku-' + idx);
+  var skuEl = document.getElementById('sku-' + idx);
   if (skuEl) skuEl.textContent = 'Артикул: ' + opt.sku;
   
-  // Обновляем цену
-  const priceEl = document.getElementById('price-' + idx);
+  var priceEl = document.getElementById('price-' + idx);
   if (priceEl) priceEl.innerHTML = opt.price.toLocaleString() + ' <span class="t-currency">₽</span>';
   
-  // Обновляем статус наличия
-  const stockEl = document.getElementById('stock-' + idx);
+  var stockEl = document.getElementById('stock-' + idx);
   if (stockEl) { stockEl.textContent = stockText; stockEl.className = 't-product-stock ' + stockClass; }
   
-  // Обновляем объём в таблице
-  const volumeEl = document.getElementById('volume-' + idx);
+  var volumeEl = document.getElementById('volume-' + idx);
   if (volumeEl) volumeEl.textContent = sizeItem.volume;
   
-  // Обновляем статус в таблице
-  const statusEl = document.getElementById('status-' + idx);
+  var statusEl = document.getElementById('status-' + idx);
   if (statusEl) statusEl.textContent = stockText;
   
-  // Обновляем кнопку "В корзину"
-  const buyBtn = card.querySelector('.t-btn-buy');
+  var buyBtn = card.querySelector('.t-btn-buy');
   if (buyBtn) {
     if (stock === 'Под заказ') {
       buyBtn.className = 't-btn-buy on-order';
@@ -225,8 +390,5 @@ function updateCard(idx) {
   }
 }
 
-// ============================================================
-// ЗАПУСК
-// ============================================================
 document.addEventListener('DOMContentLoaded', loadProducts);
 </script>
