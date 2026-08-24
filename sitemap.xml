@@ -60,9 +60,10 @@
     <changefreq>daily</changefreq>
     <priority>0.8000</priority>
   </url>
+  <!-- ДОБАВЛЕНА СТРАНИЦА /decor -->
   <url>
     <loc>https://colormsk.ru/decor</loc>
-    <lastmod>2026-08-19T11:43:16+00:00</lastmod>
+    <lastmod>2026-08-24T11:43:16+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8000</priority>
   </url>
