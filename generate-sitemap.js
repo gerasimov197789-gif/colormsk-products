@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Основные страницы с высоким приоритетом -->
   <url>
     <loc>https://colormsk.ru/</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Категории с приоритетом 0.9 -->
   <url>
     <loc>https://colormsk.ru/antiseptiki</loc>
     <lastmod>2026-08-26</lastmod>
@@ -31,6 +34,14 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://colormsk.ru/alkidnye-kraski</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Категории со средним приоритетом -->
+  <url>
     <loc>https://colormsk.ru/gruntovki</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>daily</changefreq>
@@ -43,29 +54,27 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/alkidnye-kraski</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://colormsk.ru/rastvoriteli</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- Служебные страницы -->
   <url>
     <loc>https://colormsk.ru/catalog-colors</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://colormsk.ru/info</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
+  
+  <!-- Товары с приоритетом 0.6 (удалены все дубликаты) -->
   <url>
     <loc>https://colormsk.ru/product?sku=00-00009689</loc>
     <lastmod>2026-08-26</lastmod>
@@ -336,6 +345,8 @@
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
+  
+  <!-- Товары с приоритетом 0.6 (удалены дубликаты 00-00014465, 00-00014464, 00-00014478 и т.д.) -->
   <url>
     <loc>https://colormsk.ru/product?sku=00-00014465</loc>
     <lastmod>2026-08-26</lastmod>
@@ -403,12 +414,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/product?sku=00-00014465</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://colormsk.ru/product?sku=00-00014479</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>daily</changefreq>
@@ -462,6 +467,8 @@
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
+  
+  <!-- Остальные товары -->
   <url>
     <loc>https://colormsk.ru/product?sku=00-01100995</loc>
     <lastmod>2026-08-26</lastmod>
@@ -912,6 +919,8 @@
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
+  
+  <!-- Товары 00-011004xx (удалены дубликаты) -->
   <url>
     <loc>https://colormsk.ru/product?sku=00-01100424</loc>
     <lastmod>2026-08-26</lastmod>
@@ -984,6 +993,8 @@
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
+  
+  <!-- Товары 00-000110xx (удалены дубликаты) -->
   <url>
     <loc>https://colormsk.ru/product?sku=00-00011024</loc>
     <lastmod>2026-08-26</lastmod>
@@ -1020,42 +1031,8 @@
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011016</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011013</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011015</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011012</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011014</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011011</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
+  
+  <!-- Оставшиеся товары (удалены дубликаты 00-00011016, 00-00011013, 00-00011015, 00-00011012, 00-00011014, 00-00011011) -->
   <url>
     <loc>https://colormsk.ru/product?sku=00-01101602</loc>
     <lastmod>2026-08-26</lastmod>
@@ -1218,20 +1195,10 @@
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
+  
+  <!-- Товары 00-000113xx (удалены дубликаты) -->
   <url>
     <loc>https://colormsk.ru/product?sku=00-00011318</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011318</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011319</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1248,12 +1215,8 @@
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011320</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
+  
+  <!-- Остальные товары -->
   <url>
     <loc>https://colormsk.ru/product?sku=00-00009377</loc>
     <lastmod>2026-08-26</lastmod>
@@ -1430,150 +1393,6 @@
   </url>
   <url>
     <loc>https://colormsk.ru/product?sku=00-00010519</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011016</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011013</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011015</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011012</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011014</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011011</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-01100424</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-01100418</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-01100428</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-01100421</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-01100427</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-01100419</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-01100429</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-01100422</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-01100426</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-01100420</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-01100430</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-01100423</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011024</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011021</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011023</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011020</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011022</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/product?sku=00-00011018</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
