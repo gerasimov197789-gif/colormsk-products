@@ -1,16 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
-// Путь к папке с JSON-файлами продуктов
 const productsDir = path.join(__dirname, 'products');
 
-// Функция для получения всех SKU из JSON-файлов
-function getAllProducts() {
-  const allProducts = [];
+// Функция для извлечения всех SKU из JSON-файлов
+function getAllSkus() {
+  const allSkus = [];
   
-  // Проверяем, существует ли папка products
   if (!fs.existsSync(productsDir)) {
-    console.log('⚠️ Папка products не найдена!');
+    console.log('❌ Папка products не найдена!');
     return [];
   }
   
@@ -22,27 +20,27 @@ function getAllProducts() {
       const filePath = path.join(productsDir, file);
       try {
         const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-        console.log(`📄 Читаю ${file}: ${data.length} записей`);
+        console.log(`📄 Читаю ${file}: ${Array.isArray(data) ? data.length : 'объект'} записей`);
         
-        // Если JSON - массив
+        // Обработка массива товаров
         if (Array.isArray(data)) {
           data.forEach(item => {
-            if (typeof item === 'string') {
-              allProducts.push(item);
-            } else if (item.sku) {
-              allProducts.push(item.sku);
-            } else if (item.id) {
-              allProducts.push(item.id);
+            // Ищем SKU в полях товара
+            if (item.sku) {
+              allSkus.push(item.sku);
             }
-          });
-        } 
-        // Если JSON - объект с ключами
-        else if (typeof data === 'object') {
-          Object.values(data).forEach(item => {
-            if (typeof item === 'string') {
-              allProducts.push(item);
-            } else if (item.sku) {
-              allProducts.push(item.sku);
+            
+            // Ищем SKU в размерах
+            if (item.sizes && Array.isArray(item.sizes)) {
+              item.sizes.forEach(size => {
+                if (size.options && Array.isArray(size.options)) {
+                  size.options.forEach(option => {
+                    if (option.sku) {
+                      allSkus.push(option.sku);
+                    }
+                  });
+                }
+              });
             }
           });
         }
@@ -52,31 +50,34 @@ function getAllProducts() {
     }
   });
   
-  // Удаляем дубликаты
-  return [...new Set(allProducts)];
+  return [...new Set(allSkus)]; // Удаляем дубликаты
 }
 
 // Получаем все SKU
-const allSkus = getAllProducts();
+const allSkus = getAllSkus();
 console.log(`🛒 Всего уникальных товаров: ${allSkus.length}`);
+if (allSkus.length > 0) {
+  console.log(`📋 Первые 5 SKU: ${allSkus.slice(0, 5).join(', ')}...`);
+}
 
-// Основные URL сайта
+// Основные URL
 const urls = [
   { loc: 'https://colormsk.ru/', priority: 1.0 },
   { loc: 'https://colormsk.ru/catalog-colors', priority: 0.8 },
   { loc: 'https://colormsk.ru/info', priority: 0.5 }
 ];
 
-// Категории из названий JSON-файлов
-const categoryFiles = fs.readdirSync(productsDir).filter(f => f.endsWith('.json'));
-categoryFiles.forEach(file => {
-  const category = file.replace('.json', '');
-  urls.push({
-    loc: `https://colormsk.ru/${category}`,
-    priority: 0.9
-  });
+// Категории из названий файлов
+const files = fs.existsSync(productsDir) ? fs.readdirSync(productsDir) : [];
+files.forEach(file => {
+  if (file.endsWith('.json')) {
+    const category = file.replace('.json', '');
+    urls.push({
+      loc: `https://colormsk.ru/${category}`,
+      priority: 0.9
+    });
+  }
 });
-console.log(`📂 Категорий: ${categoryFiles.length}`);
 
 // Добавляем все товары
 allSkus.forEach(sku => {
@@ -106,11 +107,12 @@ function generateSitemap(urls) {
   return xml;
 }
 
-// Сохранение файла
+// Сохранение
 const sitemap = generateSitemap(urls);
 const outputPath = path.join(__dirname, 'sitemap.xml');
 
 fs.writeFileSync(outputPath, sitemap, 'utf8');
-console.log(`✅ Sitemap успешно создан!`);
+console.log(`\n✅ Sitemap успешно создан!`);
 console.log(`📄 Файл: ${outputPath}`);
 console.log(`📊 Всего URL: ${urls.length}`);
+console.log(`🛒 Товаров: ${allSkus.length}`);
