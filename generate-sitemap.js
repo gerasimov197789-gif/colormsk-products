@@ -20,24 +20,16 @@ function getAllSkus() {
       const filePath = path.join(productsDir, file);
       try {
         const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-        console.log(`📄 Читаю ${file}: ${Array.isArray(data) ? data.length : 'объект'} записей`);
+        console.log(`📄 Читаю ${file}`);
         
-        // Обработка массива товаров
         if (Array.isArray(data)) {
           data.forEach(item => {
-            // Ищем SKU в полях товара
-            if (item.sku) {
-              allSkus.push(item.sku);
-            }
-            
-            // Ищем SKU в размерах
+            if (item.sku) allSkus.push(item.sku);
             if (item.sizes && Array.isArray(item.sizes)) {
               item.sizes.forEach(size => {
                 if (size.options && Array.isArray(size.options)) {
                   size.options.forEach(option => {
-                    if (option.sku) {
-                      allSkus.push(option.sku);
-                    }
+                    if (option.sku) allSkus.push(option.sku);
                   });
                 }
               });
@@ -50,34 +42,30 @@ function getAllSkus() {
     }
   });
   
-  return [...new Set(allSkus)]; // Удаляем дубликаты
+  return [...new Set(allSkus)];
 }
 
 // Получаем все SKU
 const allSkus = getAllSkus();
 console.log(`🛒 Всего уникальных товаров: ${allSkus.length}`);
-if (allSkus.length > 0) {
-  console.log(`📋 Первые 5 SKU: ${allSkus.slice(0, 5).join(', ')}...`);
-}
 
-// Основные URL
+// ============================================================
+// !!! ОКОНЧАТЕЛЬНЫЙ СПИСОК ПРАВИЛЬНЫХ URL ИЗ НАСТРОЕК TILDA !!!
+// ============================================================
 const urls = [
   { loc: 'https://colormsk.ru/', priority: 1.0 },
-  { loc: 'https://colormsk.ru/catalog-colors', priority: 0.8 },
+  { loc: 'https://colormsk.ru/antiseptiki', priority: 0.9 },
+  { loc: 'https://colormsk.ru/kraski-interiernye', priority: 0.9 }, // ✅ Подтвержден
+  { loc: 'https://colormsk.ru/kraski-fasadnye', priority: 0.9 },    // ✅ Подтвержден
+  { loc: 'https://colormsk.ru/laki', priority: 0.9 },
+  { loc: 'https://colormsk.ru/gruntovki', priority: 0.8 },
+  { loc: 'https://colormsk.ru/decor', priority: 0.8 },
+  { loc: 'https://colormsk.ru/alkidnye-kraski', priority: 0.9 },    // ✅ Подтвержден
+  { loc: 'https://colormsk.ru/rastvoriteli', priority: 0.7 },
+  { loc: 'https://colormsk.ru/catalog-colors', priority: 0.6 },
   { loc: 'https://colormsk.ru/info', priority: 0.5 }
 ];
-
-// Категории из названий файлов
-const files = fs.existsSync(productsDir) ? fs.readdirSync(productsDir) : [];
-files.forEach(file => {
-  if (file.endsWith('.json')) {
-    const category = file.replace('.json', '');
-    urls.push({
-      loc: `https://colormsk.ru/${category}`,
-      priority: 0.9
-    });
-  }
-});
+// ============================================================
 
 // Добавляем все товары
 allSkus.forEach(sku => {
