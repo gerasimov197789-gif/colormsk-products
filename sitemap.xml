@@ -7,49 +7,19 @@
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/catalog-colors</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/info</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/alkid</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://colormsk.ru/antiseptiki</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/decor</loc>
+    <loc>https://colormsk.ru/kraski-interiernye</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/fasad</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/gruntovki</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://colormsk.ru/interier</loc>
+    <loc>https://colormsk.ru/kraski-fasadnye</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -61,10 +31,40 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/rastvoriteli</loc>
+    <loc>https://colormsk.ru/gruntovki</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colormsk.ru/decor</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colormsk.ru/alkidnye-kraski</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://colormsk.ru/rastvoriteli</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://colormsk.ru/catalog-colors</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://colormsk.ru/info</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://colormsk.ru/product?sku=00-00009949</loc>
