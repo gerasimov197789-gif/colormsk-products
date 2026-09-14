@@ -1,11 +1,6 @@
 User-Agent: *
-Disallow: /tilda/form*
-Disallow: /tilda/rec*
-Disallow: /tilda/click*
-Disallow: /tilda/scroi1*
-Disallow: /tilda/product*
-Disallow: /tilda/event*
-Disallow: /members/login*
-Disallow: /members/signup*
+Disallow: /products/
+Disallow: /*.json$
+Allow: /sitemap.xml
 
-Sitemap: https://colormsk.ru/sitemap
+Sitemap: https://colormsk.ru/sitemap.xml
