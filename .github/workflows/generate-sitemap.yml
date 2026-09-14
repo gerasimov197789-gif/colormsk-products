@@ -1,154 +1,27 @@
-// generate-sitemap.js
-// Генератор sitemap.xml для каталога ColorMSK
-// Запуск: node generate-sitemap.js
+name: Generate Sitemap
 
-const fs = require('fs');
-const path = require('path');
+on:
+  push:
+    paths:
+      - 'products/*.json'
+  workflow_dispatch:
 
-// ============================================================
-// НАСТРОЙКИ — отредактируйте под свой сайт
-// ============================================================
-const SITE_URL = 'https://colormsk.ru';
-const PRODUCTS_DIR = './products';
-const OUTPUT_FILE = './sitemap.xml';
-
-// Категории — должны совпадать с именами JSON-файлов (без .json)
-const CATEGORIES = [
-    'antiseptiki',
-    'kraski-interiernye',
-    'kraski-fasadnye',
-    'laki',
-    'gruntovki',
-    'dekorativnye-shtukaturki',
-    'alkidnye-kraski',
-    'rastvoriteli'
-];
-
-// ============================================================
-// ТРАНСЛИТЕРАЦИЯ (та же, что в основном скрипте)
-// ============================================================
-function translit(text) {
-    const map = {
-        'а':'a','б':'b','в':'v','г':'g','д':'d','е':'e','ё':'e','ж':'zh','з':'z',
-        'и':'i','й':'y','к':'k','л':'l','м':'m','н':'n','о':'o','п':'p','р':'r',
-        'с':'s','т':'t','у':'u','ф':'f','х':'h','ц':'ts','ч':'ch','ш':'sh','щ':'sch',
-        'ъ':'','ы':'y','ь':'','э':'e','ю':'yu','я':'ya',
-        'А':'A','Б':'B','В':'V','Г':'G','Д':'D','Е':'E','Ё':'E','Ж':'ZH','З':'Z',
-        'И':'I','Й':'Y','К':'K','Л':'L','М':'M','Н':'N','О':'O','П':'P','Р':'R',
-        'С':'S','Т':'T','У':'U','Ф':'F','Х':'H','Ц':'TS','Ч':'CH','Ш':'SH','Щ':'SCH',
-        'Ъ':'','Ы':'Y','Ь':'','Э':'E','Ю':'YU','Я':'YA'
-    };
-    let result = '';
-    for (let i = 0; i < text.length; i++) {
-        const ch = text[i];
-        result += map[ch] || (ch.match(/[a-zA-Z0-9]/) ? ch : '-');
-    }
-    return result.replace(/-+/g, '-').replace(/^-|-$/g, '').toLowerCase();
-}
-
-// ============================================================
-// XML-ЭСКЕЙПИНГ
-// ============================================================
-function escapeXml(str) {
-    return String(str)
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;')
-        .replace(/'/g, '&apos;');
-}
-
-// ============================================================
-// СБОР URL ИЗ JSON
-// ============================================================
-function collectUrls() {
-    const urls = [];
-
-    CATEGORIES.forEach(category => {
-        const filePath = path.join(PRODUCTS_DIR, category + '.json');
-        
-        if (!fs.existsSync(filePath)) {
-            console.warn(`⚠️ Файл не найден: ${filePath}`);
-            return;
-        }
-
-        try {
-            const raw = fs.readFileSync(filePath, 'utf-8');
-            const products = JSON.parse(raw);
-
-            products.forEach(product => {
-                if (!product.sizes || !product.sizes.length) return;
-                const firstOption = product.sizes[0].options?.[0];
-                if (!firstOption || !firstOption.sku) return;
-
-                const slug = translit(product.name);
-                const sku = firstOption.sku;
-                const url = `${SITE_URL}/product/${category}/${slug}--${sku}`;
-
-                urls.push({
-                    loc: url,
-                    lastmod: new Date().toISOString().split('T')[0],
-                    changefreq: 'weekly',
-                    priority: 0.7
-                });
-            });
-
-            console.log(`✅ ${category}: ${products.length} товаров`);
-        } catch (e) {
-            console.error(`❌ Ошибка в ${filePath}:`, e.message);
-        }
-    });
-
-    return urls;
-}
-
-// ============================================================
-// ГЕНЕРАЦИЯ SITEMAP.XML
-// ============================================================
-function generateSitemap() {
-    const urls = collectUrls();
-
-    // Добавляем статические страницы
-    const staticPages = [
-        { loc: `${SITE_URL}/`, priority: 1.0, changefreq: 'weekly' },
-        { loc: `${SITE_URL}/antiseptiki`, priority: 0.8 },
-        { loc: `${SITE_URL}/kraski-interiernye`, priority: 0.8 },
-        { loc: `${SITE_URL}/kraski-fasadnye`, priority: 0.8 },
-        { loc: `${SITE_URL}/laki`, priority: 0.8 },
-        { loc: `${SITE_URL}/gruntovki`, priority: 0.8 },
-        { loc: `${SITE_URL}/dekorativnye-shtukaturki`, priority: 0.8 },
-        { loc: `${SITE_URL}/alkidnye-kraski`, priority: 0.8 },
-        { loc: `${SITE_URL}/rastvoriteli`, priority: 0.8 }
-    ];
-
-    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-
-    // Статические страницы
-    staticPages.forEach(page => {
-        xml += '  <url>\n';
-        xml += `    <loc>${escapeXml(page.loc)}</loc>\n`;
-        xml += `    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>\n`;
-        xml += `    <changefreq>${page.changefreq || 'monthly'}</changefreq>\n`;
-        xml += `    <priority>${page.priority}</priority>\n`;
-        xml += '  </url>\n';
-    });
-
-    // Товары
-    urls.forEach(url => {
-        xml += '  <url>\n';
-        xml += `    <loc>${escapeXml(url.loc)}</loc>\n`;
-        xml += `    <lastmod>${url.lastmod}</lastmod>\n`;
-        xml += `    <changefreq>${url.changefreq}</changefreq>\n`;
-        xml += `    <priority>${url.priority}</priority>\n`;
-        xml += '  </url>\n';
-    });
-
-    xml += '</urlset>\n';
-
-    fs.writeFileSync(OUTPUT_FILE, xml, 'utf-8');
-    console.log(`\n✅ Готово! Создано ${staticPages.length + urls.length} URL`);
-    console.log(`📄 Файл: ${OUTPUT_FILE}`);
-}
-
-generateSitemap();
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Generate sitemap
+        run: node generate-sitemap.js
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update sitemap.xml"
+          git push
