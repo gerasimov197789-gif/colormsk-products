@@ -66,336 +66,320 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- ===== ЛАКИ ===== -->
   <url>
-    <loc>https://colormsk.ru/laki/lak-antiseptik-restavrator-ep--00-01100995</loc>
+    <loc>https://colormsk.ru/product/antiseptiki/antiseptik-v-e-wood-guard-c--00-00009689</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/laki/lak-mebel-nyy-premiera-ep--00-00013100</loc>
+    <loc>https://colormsk.ru/product/antiseptiki/antiseptik-gruntovochnyy-doctor-wood-aqua--00-01101086</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/laki/lak-hard-wood-aqua--00-00012980</loc>
+    <loc>https://colormsk.ru/product/antiseptiki/antiseptik-gruntovochnyy-doctor-wood-na-osnove-l-nyanogo-masla--00-00009739</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/laki/lak-hard-wood-yahtnyy--00-00009554</loc>
+    <loc>https://colormsk.ru/product/antiseptiki/antiseptik-nordic-wood-aqua--00-01101089</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/laki/lak-zaschitno-dekorativnyy--00-00011938</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ===== АНТИСЕПТИКИ ===== -->
-  <url>
-    <loc>https://colormsk.ru/antiseptiki/antiseptik-v-e-wood-guard-c--00-00009689</loc>
+    <loc>https://colormsk.ru/product/antiseptiki/antiseptik-nordic-wood-na-osnove-l-nyanogo-masla--00-00009742</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/antiseptiki/antiseptik-gruntovochnyy-doctor-wood-aqua--00-01101086</loc>
+    <loc>https://colormsk.ru/product/antiseptiki/antiseptik-nordic-wood-silk--00-01101733</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/antiseptiki/antiseptik-gruntovochnyy-doctor-wood-na-maslyanoy-osnove--00-00009739</loc>
+    <loc>https://colormsk.ru/product/antiseptiki/zaschitnyy-sostav-v-e-nordic-sauna--00-00010734</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/antiseptiki/antiseptik-nordic-wood-aqua--00-01101089</loc>
+    <loc>https://colormsk.ru/product/antiseptiki/maslo-nordic-terrace-oil--00-01101224</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/antiseptiki/antiseptik-nordic-wood-na-maslyanoy-osnove--00-00009742</loc>
+    <loc>https://colormsk.ru/product/antiseptiki/antiseptik-lessiruyuschiy--00-00014465</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/antiseptiki/antiseptik-nordic-wood-silk--00-01101733</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-aqua-marina--00-01101606</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/antiseptiki/zaschitnyy-sostav-v-e-nordic-sauna--00-00010734</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-euro-balance-2-super-belaya--00-01100281</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/antiseptiki/maslo-nordic-terrace-oil--00-01101224</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-euro-balance-7--00-01100282</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/antiseptiki/antiseptik-lessiruyuschiy--00-00014465</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ===== КРАСКИ ИНТЕРЬЕРНЫЕ ===== -->
-  <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-aqua-marina--00-01101606</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-euro-life-shelk-matovaya--00-01100263</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-euro-balance-2-super-belaya--00-01100281</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-cabinet-royal--00-00008953</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-euro-balance-7--00-01100282</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-moyuschayasya-prof--00-01101602</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-euro-life-shelk-matovaya--00-01100263</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-akrilovaya-prof--00-00015512</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-cabinet-royal--00-00008953</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-vlagostoykaya-prof--00-00015513</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-moyuschayasya-prof--00-01101602</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-inter-ernaya-prof--00-01101601</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-akrilovaya-prof--00-00015512</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-mattlateks-prof--00-01100284</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-vlagostoykaya-prof--00-00015513</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-fakturnaya--00-01101424</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-inter-ernaya-prof--00-01101601</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-akrilovaya--00-00014229</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-mattlateks-prof--00-01100284</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-dlya-vannoy-i-kuhni--00-00014228</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-fakturnaya--00-01101424</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-inter-ernaya-vlagostoykaya--00-00014226</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-akrilovaya--00-00014229</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-inter-ernaya--00-00014227</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-dlya-vannoy-i-kuhni--00-00014228</loc>
+    <loc>https://colormsk.ru/product/kraski-interiernye/kraska-v-e-moyuschayasya--00-00014225</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-inter-ernaya-vlagostoykaya--00-00014226</loc>
+    <loc>https://colormsk.ru/product/kraski-fasadnye/kraska-fasadnaya-v-e-euro-balance-facade-aqua--00-01101608</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-inter-ernaya--00-00014227</loc>
+    <loc>https://colormsk.ru/product/kraski-fasadnye/kraska-fasadnaya-v-e-euro-balance-facade-siloxan--00-01100250</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-interiernye/kraska-v-e-moyuschayasya--00-00014225</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ===== КРАСКИ ФАСАДНЫЕ ===== -->
-  <url>
-    <loc>https://colormsk.ru/kraski-fasadnye/kraska-fasadnaya-v-e-euro-balance-facade-aqua--00-01101608</loc>
+    <loc>https://colormsk.ru/product/kraski-fasadnye/kraska-fasadnaya-po-derevu-forester--00-01100269</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-fasadnye/kraska-fasadnaya-v-e-euro-balance-facade-siloxan--00-01100250</loc>
+    <loc>https://colormsk.ru/product/kraski-fasadnye/kraska-v-e-fasadnaya-prof--00-01101604</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-fasadnye/kraska-fasadnaya-po-derevu-forester--00-01100269</loc>
+    <loc>https://colormsk.ru/product/kraski-fasadnye/kraska-v-e-fasadnaya--00-00014230</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-fasadnye/kraska-v-e-fasadnaya-prof--00-01101604</loc>
+    <loc>https://colormsk.ru/product/laki/lak-antiseptik-restavrator-ep--00-01100995</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/kraski-fasadnye/kraska-v-e-fasadnaya--00-00014230</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ===== ГРУНТОВКИ ===== -->
-  <url>
-    <loc>https://colormsk.ru/gruntovki/gruntovka-ferox-stopper--00-00011318</loc>
+    <loc>https://colormsk.ru/product/laki/lak-mebel-nyy-premiera-ep--00-00013100</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/gruntovki/gruntovka-euro-balance-primer--00-00009377</loc>
+    <loc>https://colormsk.ru/product/laki/lak-hard-wood-aqua--00-00012980</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/gruntovki/gruntovka-deep-contact--00-00009297</loc>
+    <loc>https://colormsk.ru/product/laki/lak-hard-wood-yahtnyy--00-00009554</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/gruntovki/gruntovka-glubokogo-proniknoveniya--00-00011932</loc>
+    <loc>https://colormsk.ru/product/laki/lak-zaschitno-dekorativnyy--00-00011938</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/gruntovki/gruntovka-gf-021--00-00012522</loc>
+    <loc>https://colormsk.ru/product/gruntovki/gruntovka-ferox-stopper--00-00011318</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/gruntovki/shpatlevka-plastrok-finishnaya--00-00011830</loc>
+    <loc>https://colormsk.ru/product/gruntovki/gruntovka-euro-balance-primer--00-00009377</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/gruntovki/gruntovka-glubokogo-proniknoveniya--00-00014231</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ===== ДЕКОРАТИВНЫЕ ШТУКАТУРКИ ===== -->
-  <url>
-    <loc>https://colormsk.ru/dekorativnye-shtukaturki/venetsianskaya-shtukaturka-stucco-veneziano--00-00000001</loc>
+    <loc>https://colormsk.ru/product/gruntovki/gruntovka-deep-contact--00-00009297</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/dekorativnye-shtukaturki/dekorativnoe-pokrytie-remolino--00-00000002</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ===== ЭМАЛИ ===== -->
-  <url>
-    <loc>https://colormsk.ru/alkidnye-kraski/emal-winner--00-00009949</loc>
+    <loc>https://colormsk.ru/product/gruntovki/gruntovka-glubokogo-proniknoveniya--00-00011932</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/alkidnye-kraski/emal-pobeditel--00-00011016</loc>
+    <loc>https://colormsk.ru/product/gruntovki/gruntovka-gf-021--00-00012522</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/alkidnye-kraski/emal-v-e-premiera--00-01100424</loc>
+    <loc>https://colormsk.ru/product/gruntovki/shpatlevka-plastrok-finishnaya--00-00011830</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/alkidnye-kraski/emal-modern--00-00011024</loc>
+    <loc>https://colormsk.ru/product/gruntovki/gruntovka-glubokogo-proniknoveniya--00-00014231</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/alkidnye-kraski/grunt-emal-3v1--00-00015850</loc>
+    <loc>https://colormsk.ru/product/dekorativnye-shtukaturki/venetsianskaya-shtukaturka-stucco-veneziano--00-00000001</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/alkidnye-kraski/emal-pf-115--00-00012061</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ===== РАСТВОРИТЕЛИ ===== -->
-  <url>
-    <loc>https://colormsk.ru/rastvoriteli/rastvoritel-uayt-spirit-dezodorirovannyy--00-00015116</loc>
+    <loc>https://colormsk.ru/product/dekorativnye-shtukaturki/dekorativnoe-pokrytie-remolino--00-00000002</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/rastvoriteli/rastvoritel-universal-nyy--00-00015243</loc>
+    <loc>https://colormsk.ru/product/alkidnye-kraski/emal-winner--00-00009949</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://colormsk.ru/rastvoriteli/rastvoritel-uayt-spirit--00-00015115</loc>
+    <loc>https://colormsk.ru/product/alkidnye-kraski/emal-pobeditel--00-00011016</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://colormsk.ru/product/alkidnye-kraski/emal-v-e-premiera--00-01100424</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://colormsk.ru/product/alkidnye-kraski/emal-modern--00-00011024</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://colormsk.ru/product/alkidnye-kraski/grunt-emal-3v1--00-00015850</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://colormsk.ru/product/alkidnye-kraski/emal-pf-115--00-00012061</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://colormsk.ru/product/rastvoriteli/rastvoritel-uayt-spirit-dezodorirovannyy--00-00015116</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://colormsk.ru/product/rastvoriteli/rastvoritel-universal-nyy--00-00015243</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://colormsk.ru/product/rastvoriteli/rastvoritel-uayt-spirit--00-00015115</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
