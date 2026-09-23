@@ -1,6 +1,6 @@
 // generate-sitemap.js
 // Генератор sitemap.xml для каталога ColorMSK
-// Формат URL: https://colormsk.ru/product/{category}/{translit-name}--{sku}
+// Формат URL: https://colormsk.ru/{category}/{translit-name}--{sku}
 
 const fs = require('fs');
 const path = require('path');
