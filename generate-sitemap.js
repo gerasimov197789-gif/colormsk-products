@@ -98,7 +98,7 @@ function collectProducts() {
 
                 const slug = translit(product.name || 'product');
                 const sku = firstOption.sku;
-                const url = `${SITE_URL}/product/${cat.url}/${slug}--${sku}`;
+                const url = `${SITE_URL}/${cat.url}/${slug}--${sku}`;
 
                 products.push({
                     loc: url,
